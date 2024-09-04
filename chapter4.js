@@ -21,3 +21,17 @@
 
 // console.log(sumOfEvens([1, 2, 3, 4, 5, 6, 7, 8]));
 //////////af
+
+
+function findMax(arr) {
+    let max = arr[0];
+    let i = 1;
+    while (i < arr.length) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+        i++
+    }
+    return max;
+}
+console.log(findMax([3, 5, 7, 2, 8, -1, 4, 10, 12]));
