@@ -51,17 +51,31 @@
 // }
 // console.log(sumEvenNumbers([1, 2, 3, 4, 5, 6]))
 
-function countVowels(string) {
-    let i = 0; //start the loop at index 0 of the string
-    let total = 0; //init variable to keep track of total
-    const vowels = 'aeiouAEIOU'; //include lower and uppercase
-    while(i < string.length) {
-        if (vowels.includes(string[i])) { //check if character at position 1 is a vowel
-            total += 1 //increment the vowel total
-        }
-        i++
+// function countVowels(string) {
+//     let i = 0; //start the loop at index 0 of the string
+//     let total = 0; //init variable to keep track of total
+//     const vowels = 'aeiouAEIOU'; //include lower and uppercase
+//     while(i < string.length) {
+//         if (vowels.includes(string[i])) { //check if character at position 1 is a vowel
+//             total += 1 //increment the vowel total
+//         }
+//         i++
+//     }
+//     return total;
+// }
+
+// console.log(countVowels('Shakespeare'));
+
+function reverseString(string) {
+    let reversed = ""; //init an empty string to hold the reversed result
+    let i = string.length - 1; // start at the last character of the string
+
+    while (i >= 0) { //loop backward through the string
+        reversed += string[i]; // add each character to the reversed string
+        i--; // move to the prev character
     }
-    return total;
+    
+    return reversed; //return the reversed string
 }
 
-console.log(countVowels('Shakespeare'));
+console.log(reverseString('Kristy'));
