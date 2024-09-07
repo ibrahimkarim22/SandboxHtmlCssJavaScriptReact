@@ -217,3 +217,43 @@
 // }
 
 // console.log(findFirstNegative([-1, 3, 5]))
+
+////////
+
+        // function calculateTip(preTip, tipPercent) {
+        //     const tipResult = preTip * tipPercent;
+        //     return tipResult;
+        // }
+        // const preTipTotal = 100.00;
+        // const tipPercentge = 0.15;
+        // const tipCost = calculateTip(preTipTotal, tipPercentge);
+        // const totalBill = preTipTotal + tipCost;
+        // document.write("<br>" + "total bill is: $" + totalBill)
+//using anonymous function instead
+    //     const preTipTotal = 100.00;
+    //     const tipPercentage = 0.15;
+
+    //     const tipCost = function(preTip, tipPercent) {
+    //         const tipResult = preTip * tipPercent;
+    //         return (tipResult);
+    //     }
+
+    //     const totalBill = preTipTotal + tipCost(preTipTotal, tipPercentage);
+    //     document.write("<br>" + "Your total Bill $" + totalBill);
+
+    // ////////////////
+
+
+         // function makeBodyBlue() {
+      //     document.body.style.backgroundColor = 'blue'
+      //     console.log("the backgroud is now blue")
+      // }
+      // function makeBodyPink() {
+      //     document.body.style.backgroundColor = 'hotpink'
+      // }
+
+      // function changeColors(back, text) {
+      //   document.body.style.backgroundColor = back;
+      //   document.body.style.color = text;
+      // }
+      /////////////////////

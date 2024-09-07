@@ -4,49 +4,42 @@
     <meta charset="UTF-8" />
     <title>JavaScript Sandbox</title>
     <script>
-      // function makeBodyBlue() {
-      //     document.body.style.backgroundColor = 'blue'
-      //     console.log("the backgroud is now blue")
-      // }
-      // function makeBodyPink() {
-      //     document.body.style.backgroundColor = 'hotpink'
-      // }
-
-      function changeColors(back, text) {
-        document.body.style.backgroundColor = back;
-        document.body.style.color = text;
-      }
+ 
     </script>
   </head>
   <body>
-    <!-- <button onClick="makeBodyBlue()">Blue Background</button>
-        <button onClick="makeBodyPink()">Pink Background</button> -->
-    <button onClick="changeColors('hotpink', 'white')">Hotpink & white</button>
-    <button onClick="changeColors('blue', 'red')">Blue & red</button>
+    <button id="btnPinkWhite">
+      Pink and White
+    </button>
+    <button id="btnRedBlue">
+      Red and Blue
+    </button>
+    <button id="btnYellow">
+      Yellow 
+    </button>
+    <button id="documentLocation">document location</button>
+     <button id="portfolio">go to portfolio</button>
+     <script>
+      document.getElementById("btnPinkWhite").addEventListener('click', function() {
+        document.body.style.backgroundColor = "hotpink"
+        document.body.style.color = "white"
+      })
 
-    <!-- <script>makeBodyBlue()</script> -->
+      document.getElementById("btnRedBlue").addEventListener('click', function() {
+        document.body.style.backgroundColor = "red"
+        document.body.style.color = "blue"
+      })
+    
+      document.getElementById("btnYellow").addEventListener('click', () => document.body.style.backgroundColor = 'yellow')
+
+      document.getElementById("documentLocation").addEventListener('click', () => document.write(document.location.href))
+      const portfolioLink = "https://ibrahimkarim-34158.web.app/";
+      document.getElementById("portfolio").addEventListener('click', function() {
+        document.location = portfolioLink;
+      })
+    </script> 
     <script src="sandBox.js"></script>
     <script>
-        // function calculateTip(preTip, tipPercent) {
-        //     const tipResult = preTip * tipPercent;
-        //     return tipResult;
-        // }
-        // const preTipTotal = 100.00;
-        // const tipPercentge = 0.15;
-        // const tipCost = calculateTip(preTipTotal, tipPercentge);
-        // const totalBill = preTipTotal + tipCost;
-        // document.write("<br>" + "total bill is: $" + totalBill)
-//using anonymous function instead
-        const preTipTotal = 100.00;
-        const tipPercentage = 0.15;
-
-        const tipCost = function(preTip, tipPercent) {
-            const tipResult = preTip * tipPercent;
-            return (tipResult);
-        }
-
-        const totalBill = preTipTotal + tipCost(preTipTotal, tipPercentage);
-        document.write("<br>" + "Your total Bill $" + totalBill);
 
     </script>
     <script>
