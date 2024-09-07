@@ -203,17 +203,17 @@
 
 ////do...while practice////
 
-function findFirstNegative(arr) {
-    let i = 0; //initialze index;
-    let firstNegative = null; //initialize variable to store the first negative #
-    do {
-        if (arr[i] < 0) { //check if the current number is negative
-            firstNegative = arr[i]//store the first negative #
-            break;//exit the loop once the first negative # is found
-        }
-        i++; //increment index
- } while (i < arr.length); //continue looping while there are elements in the array
-    return firstNegative;//return the first negative # or null if none is found
-}
+// function findFirstNegative(arr) {
+//     let i = 0; //initialze index;
+//     let firstNegative = null; //initialize variable to store the first negative #
+//     do {
+//         if (arr[i] < 0) { //check if the current number is negative
+//             firstNegative = arr[i]//store the first negative #
+//             break;//exit the loop once the first negative # is found
+//         }
+//         i++; //increment index
+//  } while (i < arr.length); //continue looping while there are elements in the array
+//     return firstNegative;//return the first negative # or null if none is found
+// }
 
-console.log(findFirstNegative([-1, 3, 5]))
+// console.log(findFirstNegative([-1, 3, 5]))
