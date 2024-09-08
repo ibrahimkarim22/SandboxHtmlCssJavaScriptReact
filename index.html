@@ -40,10 +40,21 @@
     </script> 
     <script src="sandBox.js"></script>
     <script>
-
+      const buttons = document.getElementsByTagName('button');
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].style.color = "red";
+        buttons[i].style.backgroundColor = "blue";
+        buttons[0].style.backgroundColor = "yellow";
+      }
+      
+      // for ( const b of buttons) {
+      //   document.body.innerHTML += '<br>' + b.id;
+      // }
     </script>
     <script>
+   
       document.write("<br>" + "last modified: " + document.lastModified);
     </script>
   </body>
 </html>
+ 
