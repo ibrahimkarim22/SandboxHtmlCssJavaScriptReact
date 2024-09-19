@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS practice</title>
+</head>
+<body>
+    <div id="wrapperOne">
+        <div class="box" id="boxOne">One</div>
+        <div class="box" id="boxTwo">Two</div>
+        <div class="box" id="boxThree">Three</div>
+        <div class="box" id="boxFour">Four</div>
+        <div class="box" id="boxFive">Five</div>
+    </div>
+        <style>
+            #wrapperOne {
+                display: grid;
+                grid-template-areas: 
+                "boxone boxone boxtwo"
+                "boxthree . boxfour"
+                "boxfive boxfive boxfive";
+                grid-template-columns: 50fr 10fr 40fr;
+                gap: 50px;
+            }
+            #boxOne {
+                grid-area: boxone;
+                /* width: 50%; */
+                background-color: green;
+            }
+            #boxTwo {
+                grid-area: boxtwo;
+                background-color: orange;
+            }
+            #boxThree {
+                grid-area: boxthree;
+                background-color: red;
+            }
+            #boxFour {
+                grid-area: boxfour;
+                background-color: purple;
+            }
+            #boxFive {
+                grid-area: boxfive;
+                background-color: bisque;
+            }
+            .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+            }
+        </style>
+</body>
+</html>
