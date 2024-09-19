@@ -13,7 +13,7 @@
         <div class="box" id="boxFour">Four</div>
         <div class="box" id="boxFive">Five</div>
     </div>
-        <style>
+        <!-- <style>
             #wrapperOne {
                 display: grid;
                 grid-template-areas: 
@@ -45,6 +45,48 @@
                 background-color: bisque;
             }
             .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100px;
+            }
+        </style> -->
+        <style>
+            #wrapperOne {
+                display: flex;
+                justify-content: space-between;
+                align-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+            #boxOne {
+                flex-basis: 50%;
+                background-color: green;
+            }
+            #boxTwo {
+              flex-basis: 40%;
+              flex-grow: 1;
+                background-color: orange;
+            }
+            #boxThree {
+                order: 2;
+                flex-basis: 50%;
+                grid-area: boxthree;
+                background-color: red;
+            }
+            #boxFour {
+               order: 3;
+               flex-basis: 40%;
+               flex-grow: 1;
+                background-color: purple;
+            }
+            #boxFive {
+                order: 4;
+                flex-grow: 1;
+                flex-basis: 100%;
+                background-color: bisque;
+            }
+              .box {
                 display: flex;
                 justify-content: center;
                 align-items: center;
