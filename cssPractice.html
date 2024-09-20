@@ -52,6 +52,9 @@
             }
         </style> -->
         <style>
+            body {
+                background-color: navy;
+            }
             #wrapperOne {
                 display: flex;
                 justify-content: space-between;
@@ -92,6 +95,139 @@
                 align-items: center;
                 height: 100px;
             }
+        </style>
+
+        ////robot////
+        <div class="head">
+            <div class="light">
+                <div class="bulb"></div>
+                <div class="stick"></div>
+            </div>
+            <div class="ears">
+                <div class="ear"></div>
+                <div class="ear"></div>
+            </div>
+            <div class="eyes">
+                <div class="eye"></div>
+                <div class="eye"></div>
+            </div>
+            <div class="nose"></div>
+            <div class="mouth">
+                <div class="tooth"></div>
+                <div class="tooth"></div>
+                <div class="tooth"></div>
+                <div class="tooth"></div>
+            </div>
+        </div>
+        <style>
+            .head {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 50px;
+  background-color: #a4d9eb;
+  border: 5px solid #9bbcc2;
+  border-radius: 20px;
+}
+
+.light {
+position: relative;
+}
+
+.bulb {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 140%;
+}
+
+.stick {
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  background-color: #808080;
+  left: 50%;
+  transform: translate(-50%, -110%);
+  z-index: -1;
+}
+
+.ears{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.ear {
+  position: relative;
+  right: 10%;
+  width: 10px;
+  height: 50px;
+  background-color: #c90a0a;  
+  border-radius: 5px 0px 0px 5px;
+}
+
+.ear:not(:first-child) {
+  right: -10%;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.eyes {
+  justify-content: center;
+  display: flex;
+  transform: translate(0%, -55%);
+  gap: 20px;
+}
+
+.eye {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 5px solid #00b3ff;
+}
+
+.nose {
+  
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #c90a0a;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+  
+}
+
+.mouth {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  width: 100px;
+  height: 25px; 
+  background-color: #dedede;
+  border: 1px solid black;
+  border-radius: 20px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 25px;
+  overflow: hidden;
+}
+
+.tooth {
+position: relative;
+display: flex;
+justify-content: space-between;
+width: 5px;
+background-color: black;
+}
         </style>
 </body>
 </html>
