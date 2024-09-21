@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS practice</title>
-</head>
-<body>
+  </head>
+  <body>
     <div id="wrapperOne">
-        <div class="box" id="boxOne">One</div>
-        <div class="box" id="boxTwo">Two</div>
-        <div class="box" id="boxThree">Three</div>
-        <div class="box" id="boxFour">Four</div>
-        <div class="box" id="boxFive">Five</div>
+      <div class="box" id="boxOne">One</div>
+      <div class="box" id="boxTwo">Two</div>
+      <div class="box" id="boxThree">Three</div>
+      <div class="box" id="boxFour">Four</div>
+      <div class="box" id="boxFive">Five</div>
     </div>
-        <!-- <style>
+    <!-- <style>
             #wrapperOne {
                 display: grid;
                 grid-template-areas: 
@@ -51,183 +51,272 @@
                 height: 100px;
             }
         </style> -->
-        <style>
-            body {
-                background-color: navy;
-            }
-            #wrapperOne {
-                display: flex;
-                justify-content: space-between;
-                align-content: space-between;
-                flex-wrap: wrap;
-                gap: 20px;
-            }
-            #boxOne {
-                flex-basis: 50%;
-                background-color: green;
-            }
-            #boxTwo {
-              flex-basis: 40%;
-              flex-grow: 1;
-                background-color: orange;
-            }
-            #boxThree {
-                order: 2;
-                flex-basis: 50%;
-                grid-area: boxthree;
-                background-color: red;
-            }
-            #boxFour {
-               order: 3;
-               flex-basis: 40%;
-               flex-grow: 1;
-                background-color: purple;
-            }
-            #boxFive {
-                order: 4;
-                flex-grow: 1;
-                flex-basis: 100%;
-                background-color: bisque;
-            }
-              .box {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100px;
-            }
-        </style>
+    <style>
+      body {
+        background-color: navy;
+      }
+      #wrapperOne {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      #boxOne {
+        flex-basis: 50%;
+        background-color: green;
+      }
+      #boxTwo {
+        flex-basis: 40%;
+        flex-grow: 1;
+        background-color: orange;
+      }
+      #boxThree {
+        order: 2;
+        flex-basis: 50%;
+        grid-area: boxthree;
+        background-color: red;
+      }
+      #boxFour {
+        order: 3;
+        flex-basis: 40%;
+        flex-grow: 1;
+        background-color: purple;
+      }
+      #boxFive {
+        order: 4;
+        flex-grow: 1;
+        flex-basis: 100%;
+        background-color: bisque;
+      }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+      }
+    </style>
 
-        ////robot////
-        <div class="head">
-            <div class="light">
-                <div class="bulb"></div>
-                <div class="stick"></div>
-            </div>
-            <div class="ears">
-                <div class="ear"></div>
-                <div class="ear"></div>
-            </div>
-            <div class="eyes">
-                <div class="eye"></div>
-                <div class="eye"></div>
-            </div>
-            <div class="nose"></div>
-            <div class="mouth">
-                <div class="tooth"></div>
-                <div class="tooth"></div>
-                <div class="tooth"></div>
-                <div class="tooth"></div>
-            </div>
+    ////robot////
+    <div class="head">
+      <div class="light">
+        <div class="bulb"></div>
+        <div class="stick"></div>
+      </div>
+      <div class="ears">
+        <div class="ear"></div>
+        <div class="ear"></div>
+      </div>
+      <div class="eyes">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
+      <div class="nose"></div>
+      <div class="mouth">
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+      </div>
+    </div>
+    <style>
+      .head {
+        position: relative;
+        width: 150px;
+        height: 150px;
+        margin: 50px;
+        background-color: #a4d9eb;
+        border: 5px solid #9bbcc2;
+        border-radius: 20px;
+      }
+
+      .light {
+        position: relative;
+      }
+
+      .bulb {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: #ffa500;
+        border-radius: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 140%;
+      }
+
+      .stick {
+        position: absolute;
+        width: 10px;
+        height: 15px;
+        background-color: #808080;
+        left: 50%;
+        transform: translate(-50%, -110%);
+        z-index: -1;
+      }
+
+      .ears {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: 50%;
+        transform: translate(0%, -50%);
+      }
+
+      .ear {
+        position: relative;
+        right: 10%;
+        width: 10px;
+        height: 50px;
+        background-color: #c90a0a;
+        border-radius: 5px 0px 0px 5px;
+      }
+
+      .ear:not(:first-child) {
+        right: -10%;
+        border-radius: 0px 5px 5px 0px;
+      }
+
+      .eyes {
+        justify-content: center;
+        display: flex;
+        transform: translate(0%, -55%);
+        gap: 20px;
+      }
+
+      .eye {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: white;
+        border: 5px solid #00b3ff;
+      }
+
+      .nose {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 30px solid #c90a0a;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .mouth {
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        width: 100px;
+        height: 25px;
+        background-color: #dedede;
+        border: 1px solid black;
+        border-radius: 20px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        bottom: 25px;
+        overflow: hidden;
+      }
+
+      .tooth {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        width: 5px;
+        background-color: black;
+      }
+    </style>
+    <div id="wrapper">
+      <h1>notifications</h1>
+
+      <div id="notifications">
+        <div class="notification">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Breezeicons-actions-22-im-user.svg/2048px-Breezeicons-actions-22-im-user.svg.png" alt="" />
+          <p><span class="user">USER 1</span> user 1 post description</p>
+          <span class="time">22 minutes ago</span>
         </div>
-        <style>
-            .head {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  margin: 50px;
-  background-color: #a4d9eb;
-  border: 5px solid #9bbcc2;
-  border-radius: 20px;
-}
 
-.light {
-position: relative;
-}
+        <div class="notification">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Breezeicons-actions-22-im-user.svg/2048px-Breezeicons-actions-22-im-user.svg.png" alt="" />
+          <p><span class="user">USER 2</span> user 2 post description</p>
+          <span class="time">32 minutes ago</span>
+        </div>
 
-.bulb {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  background-color: #ffa500;
-  border-radius: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  bottom: 140%;
-}
+        <div class="notification">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Breezeicons-actions-22-im-user.svg/2048px-Breezeicons-actions-22-im-user.svg.png" alt="" />
+          <p><span class="user">USER 3</span> user 3 post description</p>
+          <span class="time">42 minutes ago</span>
+        </div>
+      </div>
+      <button>More</button>
+    </div>
+    <style>
+      #wrapper {
+        width: 280px;
+        padding: 10px;
+        background-color: lightgray;
+        border-radius: 10px;
+      }
 
-.stick {
-  position: absolute;
-  width: 10px;
-  height: 15px;
-  background-color: #808080;
-  left: 50%;
-  transform: translate(-50%, -110%);
-  z-index: -1;
-}
+      h1 {
+        text-align: center;
+        text-decoration: underline;
+        margin: 0 0 10px 0;
+      }
 
-.ears{
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  transform: translate(0%, -50%);
-}
+      #notifications {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
 
-.ear {
-  position: relative;
-  right: 10%;
-  width: 10px;
-  height: 50px;
-  background-color: #c90a0a;  
-  border-radius: 5px 0px 0px 5px;
-}
+      .notification {
+        display: grid;
+        grid-template-areas:
+          "photo text"
+          "photo time";
+        background-color: white;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
+      }
 
-.ear:not(:first-child) {
-  right: -10%;
-  border-radius: 0px 5px 5px 0px;
-}
+      img {
+        grid-area: photo;
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
 
-.eyes {
-  justify-content: center;
-  display: flex;
-  transform: translate(0%, -55%);
-  gap: 20px;
-}
+      p {
+        grid-area: text;
+        margin: 0;
+      }
 
-.eye {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: white;
-  border: 5px solid #00b3ff;
-}
+      .user {
+        font-weight: bold;
+      }
 
-.nose {
-  
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  border-left: 15px solid transparent;
-  border-right: 15px solid transparent;
-  border-bottom: 30px solid #c90a0a;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%)
-  
-}
+      .time {
+        grid-area: time;
+        font-size: 12px;
+        align-self: end;
+        justify-self: end;
+        font-weight: normal;
+        font-style: italic;
+      }
 
-.mouth {
-  position: absolute;
-  display: flex;
-  justify-content: space-around;
-  width: 100px;
-  height: 25px; 
-  background-color: #dedede;
-  border: 1px solid black;
-  border-radius: 20px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: 25px;
-  overflow: hidden;
-}
-
-.tooth {
-position: relative;
-display: flex;
-justify-content: space-between;
-width: 5px;
-background-color: black;
-}
-        </style>
-</body>
+      button {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #02203c;
+        color: white;
+      }
+    </style>
+  </body>
 </html>
