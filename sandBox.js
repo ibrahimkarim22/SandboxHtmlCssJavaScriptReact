@@ -355,3 +355,34 @@ console.log(flatten(42));
 
 //the 'flattenObject()' function opens boxes (objects) that have labeled compartments
 //making sure to not miss aything hidin in smaller boxes inside
+
+const sumNestedArray = (numbers) => {
+  return numbers.reduce((acc, curr) => {
+    if (Array.isArray(curr)) {
+      return acc + sumNestedArray(curr);
+    } else {
+      return acc + curr;
+    }
+  }, 0);
+};
+const numbers = [1, [2, [3, 4], 5], 6];
+const result = sumNestedArray(numbers);
+console.log(result);
+
+////////////////////
+
+const countNestedArrays = (input) => {
+  return input.reduce((acc, curr) => {
+    if (Array.isArray(curr)) {
+      //add 1 for the current array and recursively count arrays inside 'curr'
+      return acc + countNestedArrays(curr) + 1;
+    } else {
+      // if it's not an array, just return the accumulator
+      return acc;
+    }
+  }, 0);
+};
+
+const input = [1, [2, [3, 4], 5], 6];
+const resultOfArrayCount = countNestedArrays(input);
+console.log(resultOfArrayCount);
