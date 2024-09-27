@@ -262,25 +262,25 @@
 //the value can be a toy, a box of toys, or a collection of boxes inside more boxes
 //we don't know yet so we use the flatten function.
 
-function flatten(value) {
+// function flatten(value) {
   //first check.
   //is the value given already a 'toy' you are able to see?
   //ex. a number 5 or a word like 'hello'?
-  if (typeof value !== "object" || value === null) {
+  // if (typeof value !== "object" || value === null) {
     //if so just return it as is.
-    return value;
-  }
+  //   return value;
+  // }
 
   //second check.
   //'is this value an array? a box withing the bigger box?
-  if (Array.isArray(value)) {
+  // if (Array.isArray(value)) {
     //if so, run the flattenArray() function that will be defined below.
-    return flattenArray(value);
-  }
+  //   return flattenArray(value);
+  // }
 
   //otherwise the value must be an object so return/run the flattenObject() function that will be defined below.
-  return flattenObject(value);
-}
+//   return flattenObject(value);
+// }
 
 //the flattenArray() function
 // in order to open the 'boxes'/arrays within the main box/array.
@@ -291,9 +291,9 @@ function flatten(value) {
 // box using the flatten(curr0 to open the box)
 //finally putting them all into one array/one pile
 
-function flattenArray(array) {
-  return array.reduce((acc, curr) => acc.concat(flatten(curr)), []);
-}
+// function flattenArray(array) {
+//   return array.reduce((acc, curr) => acc.concat(flatten(curr)), []);
+// }
 
 //the flattenObject() function
 // this checks for objects which are another type of 'box'.
@@ -308,43 +308,43 @@ function flattenArray(array) {
 //if it was just simple 'toy' we put it directly into the box and label it
 //(flattnedObj[key] = flattenedValue).
 
-function flattenObject(object) {
-  const flattenedObj = {};
+// function flattenObject(object) {
+//   const flattenedObj = {};
 
-  for (const [key, value] of Object.entries(object)) {
-    const valueIsObject =
-      typeof value === "object" && value !== null && !Array.isArray(value);
-    const flattenedValue = flatten(value);
+//   for (const [key, value] of Object.entries(object)) {
+//     const valueIsObject =
+//       typeof value === "object" && value !== null && !Array.isArray(value);
+//     const flattenedValue = flatten(value);
 
-    if (valueIsObject) {
-      Object.assign(flattenedObj, flattenedValue);
-    } else {
-      flattenedObj[key] = flattenedValue;
-    }
-  }
-  return flattenedObj;
-}
+//     if (valueIsObject) {
+//       Object.assign(flattenedObj, flattenedValue);
+//     } else {
+//       flattenedObj[key] = flattenedValue;
+//     }
+//   }
+//   return flattenedObj;
+// }
 //test 1
-console.log("test 1: flatten a flat object");
-console.log(flatten({ name: "Alice", age: 25 }));
+// console.log("test 1: flatten a flat object");
+// console.log(flatten({ name: "Alice", age: 25 }));
 
 //test 2
-console.log("test 2: tlatten a nested object");
-console.log(
-  flatten({ name: "alice", details: { age: 25, city: "wonderland" } })
-);
+// console.log("test 2: tlatten a nested object");
+// console.log(
+//   flatten({ name: "alice", details: { age: 25, city: "wonderland" } })
+// );
 
 //test 3
-console.log("test 3: flatten a nested array");
-console.log(flatten([1, [2, [3, 4]], 5]));
+// console.log("test 3: flatten a nested array");
+// console.log(flatten([1, [2, [3, 4]], 5]));
 
 //test 4
-console.log("test 4: flatten an object with arrays");
-console.log(flatten({ numbers: [1, 2, [3, 4]], name: "alice" }));
+// console.log("test 4: flatten an object with arrays");
+// console.log(flatten({ numbers: [1, 2, [3, 4]], name: "alice" }));
 
 //test 5
-console.log("test 5: flatten a primitive value");
-console.log(flatten(42));
+// console.log("test 5: flatten a primitive value");
+// console.log(flatten(42));
 
 //summary
 // the 'flatten()' function decides what to do with each item
@@ -356,33 +356,70 @@ console.log(flatten(42));
 //the 'flattenObject()' function opens boxes (objects) that have labeled compartments
 //making sure to not miss aything hidin in smaller boxes inside
 
-const sumNestedArray = (numbers) => {
-  return numbers.reduce((acc, curr) => {
-    if (Array.isArray(curr)) {
-      return acc + sumNestedArray(curr);
-    } else {
-      return acc + curr;
-    }
-  }, 0);
-};
-const numbers = [1, [2, [3, 4], 5], 6];
-const result = sumNestedArray(numbers);
-console.log(result);
+// const sumNestedArray = (numbers) => {
+//   return numbers.reduce((acc, curr) => {
+//     if (Array.isArray(curr)) {
+//       return acc + sumNestedArray(curr);
+//     } else {
+//       return acc + curr;
+//     }
+//   }, 0);
+// };
+// const numbers = [1, [2, [3, 4], 5], 6];
+// const result = sumNestedArray(numbers);
+// console.log(result);
 
 ////////////////////
 
-const countNestedArrays = (input) => {
-  return input.reduce((acc, curr) => {
-    if (Array.isArray(curr)) {
+// const countNestedArrays = (input) => {
+//   return input.reduce((acc, curr) => {
+//     if (Array.isArray(curr)) {
       //add 1 for the current array and recursively count arrays inside 'curr'
-      return acc + countNestedArrays(curr) + 1;
-    } else {
+    //   return acc + countNestedArrays(curr) + 1;
+    // } else {
       // if it's not an array, just return the accumulator
+//       return acc;
+//     }
+//   }, 0);
+// };
+
+// const input = [1, [2, [3, 4], 5], 6];
+// const resultOfArrayCount = countNestedArrays(input);
+// console.log(resultOfArrayCount);
+
+/////////////////////////////////
+
+// const countOccurrences = (items) => {
+//   return items.reduce((acc, curr) => {
+//     //if curr already exists in acc increment its count
+//     if (acc[curr]) {
+//       acc[curr]++;
+//     } else {
+//       //if curr doesnt exist in acc initi its count to 1
+//       acc[curr] = 1;
+//     }
+//     return acc;
+//   }, {})
+// }
+// const items = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
+// const result = countOccurrences(items);
+// console.log(result);
+
+//output : {apple: 3, banana: 2, orange: 1}
+
+////////////////////////////////////////
+
+const sumEvenNumbers = (numbers) => {
+  return numbers.reduce((acc, curr) => {
+    if (curr % 2 === 0) {
+      return acc + curr;
+    } else {
       return acc;
     }
-  }, 0);
-};
+  }, 0)
+}
+const numbers = [1, 2, 3, 4, 5, 6];
+const result = sumEvenNumbers(numbers);
+console.log(result);
 
-const input = [1, [2, [3, 4], 5], 6];
-const resultOfArrayCount = countNestedArrays(input);
-console.log(resultOfArrayCount);
+//output: 12
