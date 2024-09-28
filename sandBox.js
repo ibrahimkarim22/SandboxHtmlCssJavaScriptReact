@@ -483,17 +483,86 @@
 
 //find the minimum and maximum in an array
 
-const findMinMax = (numbers) => {
+// const findMinMax = (numbers) => {
+//   return numbers.reduce((acc, curr) => {
+//     if (curr < acc.min) {
+//       acc.min = curr;
+//     }
+//     if (curr > acc.max) {
+//       acc.max = curr;
+//     }
+//     return acc;
+//   }, { min: Infinity, max: -Infinity })
+// };
+// const numbers = [5, 2, 9, 1, 5, 6];
+// const result = findMinMax(numbers);
+// console.log(result);  // output: { min: 1, max: 9 }
+
+/////////////////simple reduce/////////////////
+
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+
+// const add = (array) => {
+//   return array.reduce((acc, curr) => {
+//     return acc + curr;
+//   }, 0);
+// }
+// const result = add(arr);
+// console.log(result);
+
+//////////////filter odd numbers///////////
+
+// const filter = (array) => {
+//   return array.filter((num) => num % 2 !== 0);
+// }
+
+// const oddNum = filter(arr);
+// console.log('oddNum' + oddNum);
+
+
+///////////map method/////////////
+
+// const map = (array) => {
+//   return array.map((num) => num * 2);
+// }
+
+// const multiply = map(arr);
+// console.log('multiply' + multiply)
+
+/////calculate average score using reduce//////////
+
+// const students = [
+//   { name: 'Alice', score: 85 },
+//   { name: 'Bob', score: 92 },
+//   { name: 'Charlie', score: 88 },
+//   { name: 'David', score: 76 }
+// ];
+
+// const sum = (array) => {
+//   const total = array.reduce((acc, curr) => {
+//     return acc + curr.score;
+//   }, 0)
+
+//   return total / array.length;
+// }
+
+// const average = sum(students);
+// console.log('average' + average);
+
+/////sum of even numbers and odd numbers///////
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const sum = (numbers) => {
   return numbers.reduce((acc, curr) => {
-    if (curr < acc.min) {
-      acc.min = curr;
-    }
-    if (curr > acc.max) {
-      acc.max = curr;
+    if (curr % 2 === 0) {
+      acc.evenSum += curr;
+    } else {
+      acc.oddSum += curr;
     }
     return acc;
-  }, { min: Infinity, max: -Infinity })
-};
-const numbers = [5, 2, 9, 1, 5, 6];
-const result = findMinMax(numbers);
-console.log(result);  // output: { min: 1, max: 9 }
+  }, { evenSum: 0, oddSum: 0})
+} 
+
+const result = sum(numbers);
+console.log(result);
