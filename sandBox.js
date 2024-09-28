@@ -409,17 +409,91 @@
 
 ////////////////////////////////////////
 
-const sumEvenNumbers = (numbers) => {
-  return numbers.reduce((acc, curr) => {
-    if (curr % 2 === 0) {
-      return acc + curr;
-    } else {
-      return acc;
-    }
-  }, 0)
-}
-const numbers = [1, 2, 3, 4, 5, 6];
-const result = sumEvenNumbers(numbers);
-console.log(result);
+// const sumEvenNumbers = (numbers) => {
+//   return numbers.reduce((acc, curr) => {
+//     if (curr % 2 === 0) {
+//       return acc + curr;
+//     } else {
+//       return acc;
+//     }
+//   }, 0)
+// }
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const result = sumEvenNumbers(numbers);
+// console.log(result);
 
 //output: 12
+//////////////////////////
+
+//find the longest word
+
+// const findLongestWord = (words) => {
+//   return words.reduce((acc, curr) => {
+//    if (curr.length > acc.length) {
+//     return curr;
+//    } else {
+//     return acc;
+//    }
+//   }, '')
+// }
+
+// const words = ['apple', 'banana', 'strawberry', 'orange'];
+// const result = findLongestWord(words);
+// console.log(result);
+// //output: 'strawberry'
+
+///////////////////////////////
+
+//calculate average age
+
+// const caclulateAverageAge = (people) => {
+//   const totalAge = people.reduce((acc, curr) => {
+//     return acc + curr.age;
+//   }, 0)
+//   return totalAge / people.length;
+// }
+
+// const people = [
+//   {name: 'alice', age: 25},
+//   {name: 'michael', age: 30},
+//   {name: 'bard', age: 35}
+// ]
+
+// const result = caclulateAverageAge(people);
+// console.log(result);
+//output: 30
+
+//flatten and sum nested arrays
+
+// const flattenAndSum = (numbers) => {
+//   return numbers.reduce((acc, curr) => {
+//     if (Array.isArray(curr)) {
+//       return acc + flattenAndSum(curr);
+//     } else {
+//       return acc + curr;
+//     }
+//   }, 0);
+// };
+
+// const numbers = [1, [2, [3, 4]], 5];
+// const result = flattenAndSum(numbers);
+// console.log(result);
+
+//////////////////
+
+//find the minimum and maximum in an array
+
+const findMinMax = (numbers) => {
+  return numbers.reduce((acc, curr) => {
+    if (curr < acc.min) {
+      acc.min = curr;
+    }
+    if (curr > acc.max) {
+      acc.max = curr;
+    }
+    return acc;
+  }, { min: Infinity, max: -Infinity })
+};
+const numbers = [5, 2, 9, 1, 5, 6];
+const result = findMinMax(numbers);
+console.log(result);  // output: { min: 1, max: 9 }
