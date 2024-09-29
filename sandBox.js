@@ -551,18 +551,54 @@
 
 /////sum of even numbers and odd numbers///////
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-const sum = (numbers) => {
-  return numbers.reduce((acc, curr) => {
-    if (curr % 2 === 0) {
-      acc.evenSum += curr;
-    } else {
-      acc.oddSum += curr;
-    }
-    return acc;
-  }, { evenSum: 0, oddSum: 0})
-} 
+// const sum = (numbers) => {
+//   return numbers.reduce((acc, curr) => {
+//     if (curr % 2 === 0) {
+//       acc.evenSum += curr;
+//     } else {
+//       acc.oddSum += curr;
+//     }
+//     return acc;
+//   }, { evenSum: 0, oddSum: 0})
+// } 
 
-const result = sum(numbers);
-console.log(result);
+// const result = sum(numbers);
+// console.log(result);
+
+////////////find the largest number in the array///////////////
+
+// const numbers = [45, 12, 78, 34, 89, 23, 67];
+
+// const largest = (nums) => {
+//   return nums.reduce((acc, curr) => {
+//     if (curr > acc) {
+//       return curr;
+//     } else {
+//       return acc;
+//     }
+//   }, 0)
+// }
+
+// const result = largest(numbers);
+// console.log(result);
+
+/////////calculate total price for all products///////////
+
+const products = [
+  'apples: 2.50',
+  'bananas: 1.20',
+  'oranges: 4.00',
+  'grapes: 2.75',
+];
+
+const total = (products) => {
+ return products.reduce((acc, curr) => {
+    const split = curr.split(':');
+    const price = parseFloat(split[1].trim());
+    return acc + price;
+  }, 0)
+}
+  const result = total(products);
+  console.log(result);
