@@ -634,37 +634,37 @@
 
 ////////////////flatten array inside of the object//////////////////
 
-const data = {
-  name: 'Alice',
-  hobbies: ['reading', 'coding', ['traveling', 'hiking']],
-  details: {
-    age: 25,
-    favoriteNumbers: [1, 2, [3, 4], 5]
-  }
-}
+// const data = {
+//   name: 'Alice',
+//   hobbies: ['reading', 'coding', ['traveling', 'hiking']],
+//   details: {
+//     age: 25,
+//     favoriteNumbers: [1, 2, [3, 4], 5]
+//   }
+// }
 
-const flattenArr = (data) => {
- const result = {}; //this wil store the final flattened object
+// const flattenArr = (data) => {
+//  const result = {}; //this wil store the final flattened object
 //itereate over each key value pari in the object using 'destructuring'/key, value
-  for (const [key, value] of Object.entries(data)) {
-    if (Array.isArray(value)) {
+  // for (const [key, value] of Object.entries(data)) {
+  //   if (Array.isArray(value)) {
       //if the value is an array flatten it recursively
-      result[key] = value.reduce((acc, curr) => {
-        return acc.concat(Array.isArray(curr) ? flattenArr(curr) : curr)
-      }, [])
-    } else if (typeof value === 'object' && value !== null) {
+    //   result[key] = value.reduce((acc, curr) => {
+    //     return acc.concat(Array.isArray(curr) ? flattenArr(curr) : curr)
+    //   }, [])
+    // } else if (typeof value === 'object' && value !== null) {
       //if the value is an object, recursively call fllattenArr
-      result[key] = flattenArr(value)
-    } else {
-      result[key] = value;
-    }
-  }
+  //     result[key] = flattenArr(value)
+  //   } else {
+  //     result[key] = value;
+  //   }
+  // }
 
-  return result;
-};
+//   return result;
+// };
 
-const flattenedData = flattenArr(data);
-console.log(flattenedData);
+// const flattenedData = flattenArr(data);
+// console.log(flattenedData);
 
 //output: {
 //   name: 'Alice',
@@ -673,4 +673,53 @@ console.log(flattenedData);
 //     age: 25,
 //     favoriteNumbers: [1, 2, 3, 4, 5]
 //   }
+// }
+
+const data = {
+  name: 'Alice',
+  hobbies: ['reading', 'coding', ['traveling', 'hiking']],
+  address: {
+    street: '123 Main St',
+    city: 'Wonderland',
+    coordinates: [51.5074, 0.1278]
+  },
+  age: 30
+};
+
+const flattenObject = (data, parentKey = '', result = {}) => {
+  // iterate through the key-value pairs in the object
+  for (const [key, value] of Object.entries(data)) {
+    //construct the new key (parent.key for nested objects and arrays)
+    const newKey = parentKey ? `${parentKey}.${key}` : key;
+
+    if (Array.isArray(value)) {
+      //if the value is an array iterate through it and flatten recursively
+      value.forEach((item, index) => {
+        flattenObject(item, `${newKey}.${index}`, result);
+      });
+    } else if (typeof value === 'object' && value !== null) {
+      // if the value is an object recursively flatten it
+      flattenObject(value, newKey, result);
+    } else {
+      // if the value is a primitive assign it to the result object
+      result[newKey] = value;
+    }
+  }
+  
+  return result;
+};
+const flattenedData = flattenObject(data);
+console.log(flattenedData);
+
+//output {
+//   name: 'Alice',
+//   'hobbies.0': 'reading',
+//   'hobbies.1': 'coding',
+//   'hobbies.2.0': 'traveling',
+//   'hobbies.2.1': 'hiking',
+//   'address.street': '123 Main St',
+//   'address.city': 'Wonderland',
+//   'address.coordinates.0': 51.5074,
+//   'address.coordinates.1': 0.1278,
+//   age: 30
 // }
