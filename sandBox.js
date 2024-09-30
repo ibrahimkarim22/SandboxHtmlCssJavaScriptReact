@@ -586,19 +586,91 @@
 
 /////////calculate total price for all products///////////
 
-const products = [
-  'apples: 2.50',
-  'bananas: 1.20',
-  'oranges: 4.00',
-  'grapes: 2.75',
-];
+// const products = [
+//   'apples: 2.50',
+//   'bananas: 1.20',
+//   'oranges: 4.00',
+//   'grapes: 2.75',
+// ];
 
-const total = (products) => {
- return products.reduce((acc, curr) => {
-    const split = curr.split(':');
-    const price = parseFloat(split[1].trim());
-    return acc + price;
-  }, 0)
+// const total = (products) => {
+//  return products.reduce((acc, curr) => {
+//     const split = curr.split(':');
+//     const price = parseFloat(split[1].trim());
+//     return acc + price;
+//   }, 0)
+// }
+//   const result = total(products);
+//   console.log(result);
+
+/////////////flatten only one level//////////
+
+// const nestedArray = [1, [2, 3], [4, [5, 6]], 7];
+
+// const flattenArr = (value) => {
+//   if (Array.isArray(value)) {
+//   return value.reduce((acc, curr) => {
+//     return acc.concat(Array.isArray(curr) ? curr : [curr]);
+//   }, [])
+// }
+// }
+
+// const result = flattenArr(nestedArray);
+// console.log(result);
+// output: [1, 2, 3, 4, [5, 6], 7]
+
+/////////////flatten all levels///////////
+
+// const nestedArray = [1, [2, 3], [4, [5, 6]], 7];
+
+// const flattenArr = (value) => {
+//   return value.reduce((acc, curr) => {
+//     return acc.concat(Array.isArray(curr) ? flattenArr(curr) : curr);
+//   }, []);
+// }
+
+// const result = flattenArr(nestedArray);
+// console.log(result);
+
+////////////////flatten array inside of the object//////////////////
+
+const data = {
+  name: 'Alice',
+  hobbies: ['reading', 'coding', ['traveling', 'hiking']],
+  details: {
+    age: 25,
+    favoriteNumbers: [1, 2, [3, 4], 5]
+  }
 }
-  const result = total(products);
-  console.log(result);
+
+const flattenArr = (data) => {
+ const result = {}; //this wil store the final flattened object
+//itereate over each key value pari in the object using 'destructuring'/key, value
+  for (const [key, value] of Object.entries(data)) {
+    if (Array.isArray(value)) {
+      //if the value is an array flatten it recursively
+      result[key] = value.reduce((acc, curr) => {
+        return acc.concat(Array.isArray(curr) ? flattenArr(curr) : curr)
+      }, [])
+    } else if (typeof value === 'object' && value !== null) {
+      //if the value is an object, recursively call fllattenArr
+      result[key] = flattenArr(value)
+    } else {
+      result[key] = value;
+    }
+  }
+
+  return result;
+};
+
+const flattenedData = flattenArr(data);
+console.log(flattenedData);
+
+//output: {
+//   name: 'Alice',
+//   hobbies: ['reading', 'coding', 'traveling', 'hiking'],
+//   details: {
+//     age: 25,
+//     favoriteNumbers: [1, 2, 3, 4, 5]
+//   }
+// }
