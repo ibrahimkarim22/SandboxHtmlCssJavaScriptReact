@@ -675,41 +675,41 @@
 //   }
 // }
 
-const data = {
-  name: 'Alice',
-  hobbies: ['reading', 'coding', ['traveling', 'hiking']],
-  address: {
-    street: '123 Main St',
-    city: 'Wonderland',
-    coordinates: [51.5074, 0.1278]
-  },
-  age: 30
-};
+// const data = {
+//   name: 'Alice',
+//   hobbies: ['reading', 'coding', ['traveling', 'hiking']],
+//   address: {
+//     street: '123 Main St',
+//     city: 'Wonderland',
+//     coordinates: [51.5074, 0.1278]
+//   },
+//   age: 30
+// };
 
-const flattenObject = (data, parentKey = '', result = {}) => {
-  // iterate through the key-value pairs in the object
-  for (const [key, value] of Object.entries(data)) {
-    //construct the new key (parent.key for nested objects and arrays)
-    const newKey = parentKey ? `${parentKey}.${key}` : key;
+// const flattenObject = (data, parentKey = '', result = {}) => {
+//   // iterate through the key-value pairs in the object
+//   for (const [key, value] of Object.entries(data)) {
+//     //construct the new key (parent.key for nested objects and arrays)
+//     const newKey = parentKey ? `${parentKey}.${key}` : key;
 
-    if (Array.isArray(value)) {
-      //if the value is an array iterate through it and flatten recursively
-      value.forEach((item, index) => {
-        flattenObject(item, `${newKey}.${index}`, result);
-      });
-    } else if (typeof value === 'object' && value !== null) {
-      // if the value is an object recursively flatten it
-      flattenObject(value, newKey, result);
-    } else {
-      // if the value is a primitive assign it to the result object
-      result[newKey] = value;
-    }
-  }
+//     if (Array.isArray(value)) {
+//       //if the value is an array iterate through it and flatten recursively
+//       value.forEach((item, index) => {
+//         flattenObject(item, `${newKey}.${index}`, result);
+//       });
+//     } else if (typeof value === 'object' && value !== null) {
+//       // if the value is an object recursively flatten it
+//       flattenObject(value, newKey, result);
+//     } else {
+//       // if the value is a primitive assign it to the result object
+//       result[newKey] = value;
+//     }
+//   }
   
-  return result;
-};
-const flattenedData = flattenObject(data);
-console.log(flattenedData);
+//   return result;
+// };
+// const flattenedData = flattenObject(data);
+// console.log(flattenedData);
 
 //output {
 //   name: 'Alice',
@@ -723,3 +723,60 @@ console.log(flattenedData);
 //   'address.coordinates.1': 0.1278,
 //   age: 30
 // }
+
+
+//////add or update key-value pair in an object///////
+
+// const result = {};
+
+// const key = 'name';
+// const value = 'emma'
+
+// result[key] = value;
+// console.log(result);
+
+//////////dynamic key assignment//////////
+
+// const result = {};
+// const parentKey = 'address';
+// const childKey = 'street';
+// const fullKey = `${parentKey}.${childKey}`;
+// const value = '123 main St';
+
+// result[fullKey] = value;
+
+// console.log(result);
+
+
+
+/////////flatten object//////////
+
+// const data = {
+//   name: 'Alice',
+//   address: {
+//     street: '123 Main St',
+//     city: 'Wonderland'
+//   },
+//   age: 30
+// };
+
+// const flattenObj = (data) => {
+//   const result = {};
+
+//   for (const [key, value] of Object.entries(data)) {
+//     if (typeof value === "object" && value !== null) {
+//       //if the value is an object then flatten it
+//       for (const [nestedKey, nestedValue] of Object.entries(value)) {
+//         //combine the parent key with the child key using a dot
+//         result[`${key}.${nestedKey}`] = nestedValue;
+//       }
+//     } else {
+//       //if the value is not an object add it to the result as is
+//       result[key] = value;
+//     }
+//   }
+//   return result;
+// }
+// const flattenedData = flattenObj(data);
+// console.log(flattenedData);
+
