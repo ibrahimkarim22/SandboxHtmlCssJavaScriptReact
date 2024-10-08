@@ -58,17 +58,67 @@
 
 ///////////////////////////////////
 // https://edabit.com/challenge/RMZiERz2cbjmbXruY
-function triangle(n) {
-	const value = n * (n + 1) / 2;
-	return value;
-}
-console.log(triangle(6));
+// function triangle(n) {
+// 	const value = n * (n + 1) / 2;
+// 	return value;
+// }
+// console.log(triangle(6));
 
 ///////////////////////////
 // https://edabit.com/challenge/ZN5cpGPNRS3nrjMo5
 
-function capMe(arr) {
-  return arr.map(name => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase());
+// function capMe(arr) {
+//   return arr.map(name => name.charAt(0).toUpperCase() + name.slice(1).toLowerCase());
+// }
+
+// console.log(capMe(['olivia', 'emily']))
+
+
+/////////////////////////////////
+// https://edabit.com/challenge/GLbuMfTtDWwDv2F73
+// function countTrue(arr) {
+// 	let trueCounter = 0;
+// 	if (arr.length === 0) {
+// 		return 0;
+// 	} else {
+// 		for (let i = 0; i < arr.length; i++) {
+// 			if (arr[i] === true) {
+// 				trueCounter++;
+// 			}
+// 	}
+// }
+// 	return trueCounter;
+// }
+
+// console.log(countTrue([true, false, true, true, true]));
+
+/////////////////////////////////////
+// https://edabit.com/challenge/ebcd4Xu8TLizaj6dm
+
+// function arrayOfMultiples (num, length) {
+// 	let len = [];
+// 	for (let i = 1; i <= length; i++) {
+// 		let	number = num * i;
+// 		len.push(number)
+// }
+// 	return len;
+// 	}
+	
+//   console.log(arrayOfMultiples(7, 5));
+///////////////////////////
+// https://edabit.com/challenge/EMuszDzF66k9J73HG
+function jazzify(arr) {
+  let result = [];
+  
+  for (let i = 0; i < arr.length; i++) {
+      if (arr[i].endsWith('7')) {
+          result.push(arr[i]);
+      } else {
+          result.push(arr[i] + '7');
+      }
+  }
+  
+  return result;
 }
 
-console.log(capMe(['olivia', 'emily']))
+console.log(jazzify(['F', 'E', 'A', 'Ab7', 'Gm7', 'C7']))
