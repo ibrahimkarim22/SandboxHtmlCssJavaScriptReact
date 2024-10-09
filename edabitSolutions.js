@@ -107,18 +107,46 @@
 //   console.log(arrayOfMultiples(7, 5));
 ///////////////////////////
 // https://edabit.com/challenge/EMuszDzF66k9J73HG
-function jazzify(arr) {
-  let result = [];
+// function jazzify(arr) {
+//   let result = [];
   
-  for (let i = 0; i < arr.length; i++) {
-      if (arr[i].endsWith('7')) {
-          result.push(arr[i]);
-      } else {
-          result.push(arr[i] + '7');
-      }
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//       if (arr[i].endsWith('7')) {
+//           result.push(arr[i]);
+//       } else {
+//           result.push(arr[i] + '7');
+//       }
+//   }
   
-  return result;
-}
+//   return result;
+// }
 
-console.log(jazzify(['F', 'E', 'A', 'Ab7', 'Gm7', 'C7']))
+// console.log(jazzify(['F', 'E', 'A', 'Ab7', 'Gm7', 'C7']))
+/////////////////////////////
+
+
+// https://edabit.com/challenge/erFxBbqzZPSegMwnc
+
+// function changeEnough(change, amountDue) {
+// 	const values = [0.25, 0.10, 0.05, 0.01];
+// 	let total = 0;
+	
+// 	for (let i = 0; i < change.length; i++) {
+// 		total += change[i] * values[i];		
+// 	}
+// 	 return total >= amountDue;
+// }
+
+// console.log(changeEnough([25, 20, 5, 0], 4.25)); // true
+// console.log(changeEnough([2, 100, 0, 0], 14.11)); // false
+
+
+
+////////////////////////////
+// https://edabit.com/challenge/pPNAs5PvB3WvnDwDM
+// function toArray(obj) {
+//   return Object.entries(obj);
+// }
+
+// console.log(toArray({ a: 1, b: 2 })); 
+
