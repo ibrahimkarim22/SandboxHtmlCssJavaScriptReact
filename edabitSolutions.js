@@ -150,3 +150,26 @@
 
 // console.log(toArray({ a: 1, b: 2 })); 
 
+
+// https://edabit.com/challenge/Hs4TpDHX57Rqegmgg
+
+// function concat(...args) {
+//   return args.reduce((acc, curr) => acc.concat(curr), []);
+// }
+
+
+// console.log(concat([1, 2, 3], [4, 5], [6, 7]));
+
+
+///////////////////////////////////////
+// https://edabit.com/challenge/4gzDuDkompAqujpRi
+
+// function addUp(num) {
+// 	let result = 0;
+// 	for (let i = 1; i <= num; i++) {
+// 	 result += i;
+// 	}
+// 	return result;
+// }
+
+// console.log(addUp(4));
