@@ -173,3 +173,79 @@
 // }
 
 // console.log(addUp(4));
+////////////////////////
+
+// https://edabit.com/challenge/FrFkH5BPnqz4pYpqD
+
+// function splitBunches(fruits) {
+//   const result = [];
+
+//   fruits.forEach(fruit => {
+//     for (let i = 0; i < fruit.quantity; i++) {
+//       result.push({ name: fruit.name, quantity: 1 });
+//     }
+//   });
+
+//   return result;
+// }
+
+// console.log(splitBunches([
+//   { name: "currants", quantity: 1 },
+//   { name: "grapes", quantity: 2 },
+//   { name: "bananas", quantity: 2 }
+// ]));
+
+
+/////////////////////////////////////
+// sumEvenNumbers([10, 15, 20, 25, 30]);
+
+// function sumEvenNumbers (numbers) {
+//   let sum = 0;
+  
+//   numbers.forEach(element => {
+//     console.log(element);
+//     if (element % 2 === 0) {
+//       sum += element;
+//       console.log(element);
+//     }
+//   });
+//   console.log('the sum of all the even numbers is: ', sum);
+// }
+
+///////////////////////////////////////////
+
+// const names = ['alice', 'bob', 'christopher', 'david', 'eleanor'];
+
+// function countLongNames (names) {
+//   result = [];
+
+//   names.forEach(element => {
+//     if (element.length > 5) {
+//       result.push(element) 
+//     }
+//   });
+//   return result;
+// }
+// console.log(countLongNames(names));
+ //////////////////////////////////////////////////////
+
+ const people = [
+  { name: 'rebbecca', age: 25 },
+  { name: 'johnny', age: 30 },
+  { name: 'kristin', age: 35 },
+  { name: 'dave', age: 28 },
+ ];
+
+ function findOldestPerson (people) {
+  let oldestPerson = null;
+  let maxAge = 0;
+
+  people.forEach(person => {
+    if (person.age > maxAge) {
+      maxAge = person.age;
+      oldestPerson = person.name
+    }
+    console.log('the oldest pesron is: ', oldestPerson);
+    return oldestPerson;
+  });
+ }
