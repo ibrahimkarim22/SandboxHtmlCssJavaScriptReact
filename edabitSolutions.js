@@ -229,23 +229,52 @@
 // console.log(countLongNames(names));
  //////////////////////////////////////////////////////
 
- const people = [
-  { name: 'rebbecca', age: 25 },
-  { name: 'johnny', age: 30 },
-  { name: 'kristin', age: 35 },
-  { name: 'dave', age: 28 },
- ];
+//  const people = [
+//   { name: 'rebbecca', age: 25 },
+//   { name: 'johnny', age: 30 },
+//   { name: 'kristin', age: 35 },
+//   { name: 'dave', age: 28 },
+//  ];
 
- function findOldestPerson (people) {
-  let oldestPerson = null;
-  let maxAge = 0;
+//  function findOldestPerson (people) {
+//   let oldestPerson = null;
+//   let maxAge = 0;
 
-  people.forEach(person => {
-    if (person.age > maxAge) {
-      maxAge = person.age;
-      oldestPerson = person.name
-    }
-    console.log('the oldest pesron is: ', oldestPerson);
-    return oldestPerson;
-  });
- }
+//   people.forEach(person => {
+//     if (person.age > maxAge) {
+//       maxAge = person.age;
+//       oldestPerson = person.name
+//     }
+//     console.log('the oldest pesron is: ', oldestPerson);
+//     return oldestPerson;
+//   });
+//  }
+//////////////////////
+/////length of  a nested array
+//https://edabit.com/challenge/yXSTvCNen2DQHyrh6
+
+// function arrLength (array) {
+//   return array.reduce((acc, curr) => {
+//     if (Array.isArray(curr)) {
+//       return acc + arrLength(curr);
+//     }
+//     return acc + 1;
+//   }, 0)
+// }
+// console.log(arrLength([1, [2, [3, 4]]])); 
+
+//////////////////////////////////////
+//////numbers in strings
+//https://edabit.com/challenge/eCPim4XcssdZdvs32
+
+// function numInStr(arr) {
+//   return arr.filter(value => {
+//     for (let char of value) {
+//       if (!isNaN(char) && char !== ' ') {
+//         return true; 
+//       }
+//     }
+//     return false;
+//   });
+// }
+// console.log(numInStr(["1a", "a", "2b", "b"]));
