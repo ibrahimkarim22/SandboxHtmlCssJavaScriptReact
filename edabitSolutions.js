@@ -278,3 +278,34 @@
 //   });
 // }
 // console.log(numInStr(["1a", "a", "2b", "b"]));
+
+///////////////////////////////
+
+// function sevenBoom(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].toString().includes('7')) {
+//       return 'Boom!';
+//     }
+//   }
+//   return "there is no 7 in the array";
+// }
+
+// console.log(sevenBoomsevenBoom([2, 6, 7, 9, 3]));
+
+///////////////////////////
+/////https://edabit.com/challenge/Q3n42rEWanZSTmsJm
+
+// function minMax(arr) {
+// 	let min = arr[0];
+// 	let max = arr[0];
+// 	for (let i = 1; i < arr.length; i++) {
+// 		if (arr[i] < min) {
+// 			min = arr[i]
+// 		}
+// 		if (arr[i] > max) {
+// 			max = arr[i]
+// 		}
+// 	}
+// 	return [min, max];
+// }
+// console.log(minMax([14, 35, 6, 1, 34, 54]))
