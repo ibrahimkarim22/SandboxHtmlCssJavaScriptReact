@@ -309,3 +309,21 @@
 // 	return [min, max];
 // }
 // console.log(minMax([14, 35, 6, 1, 34, 54]))
+
+//////////////////////////////////////////////
+//https://edabit.com/challenge/jRSST87NjECBzbwzL
+///Total Price of Groceries
+
+// function getTotalPrice(groceries) {
+//   return parseFloat(groceries.reduce((acc, curr) => {
+//       return acc + (curr.quantity * curr.price);
+//   }, 0).toFixed(2));
+// }
+
+////////////////////////
+//https://edabit.com/challenge/9KEKJG5PZTFmG3Zau
+// function addName(obj, name, value) {
+//   obj[name] = value;
+//   return obj;
+// }
+// console.log(addName({}, "Brutus", 300))
