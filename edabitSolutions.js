@@ -331,15 +331,26 @@
 /////////////////////
 //https://edabit.com/challenge/b7iHQDw72zzkmgCun
 
-function countBoomerangs(arr) {
-  let count = 0;
+// function countBoomerangs(arr) {
+//   let count = 0;
 
-  for (let i = 0; i < arr.length - 2; i++) {
-    if (arr[i] === arr[i + 2] && arr[i] !== arr[i + 1]) {
-      count++;
-    }
-  }
-  return count;
+//   for (let i = 0; i < arr.length - 2; i++) {
+//     if (arr[i] === arr[i + 2] && arr[i] !== arr[i + 1]) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// console.log(countBoomerangs([9, 5, 9, 5, 1, 1, 1]));
+
+///////////////////////////////
+//https://edabit.com/challenge/r6TSNwkLZ2DgsoKiH
+
+function oddOrEven(num) {
+  const sum = num.toString().split('').reduce((acc, curr) => acc + Number(curr), 0);
+
+  return sum % 2 === 0 ? "Even" : "Odd";
 }
 
-console.log(countBoomerangs([9, 5, 9, 5, 1, 1, 1]));
+console.log(oddOrEven(121))
