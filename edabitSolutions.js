@@ -347,10 +347,41 @@
 ///////////////////////////////
 //https://edabit.com/challenge/r6TSNwkLZ2DgsoKiH
 
-function oddOrEven(num) {
-  const sum = num.toString().split('').reduce((acc, curr) => acc + Number(curr), 0);
+// function oddOrEven(num) {
+//   const sum = num.toString().split('').reduce((acc, curr) => acc + Number(curr), 0);
 
-  return sum % 2 === 0 ? "Even" : "Odd";
+//   return sum % 2 === 0 ? "Even" : "Odd";
+// }
+
+// console.log(oddOrEven(121))
+
+////////////////////////////
+//https://edabit.com/challenge/Np7R8F24PaqBShZc5
+
+// function colorPatternTimes(cols) {
+//   let totalTime = 0; 
+//   totalTime += cols.length * 2;
+//   for (let i = 1; i < cols.length; i++) {
+//     if (cols[i] !== cols[i - 1]) {
+//       totalTime += 1;
+//     }
+//   }
+//   return totalTime;
+// }
+// console.log(colorPatternTimes(["Red", "Blue", "Red", "Blue", "Red"]))
+
+////////////////////////////////////////////////
+//https://edabit.com/challenge/TYcMysG6yy4RKEQPP
+
+function invert(string) {
+  return string.split('').reverse().map(char => {
+    if (char === char.toUpperCase()) {
+      return char.toLowerCase();
+    } else {
+      return char.toUpperCase();
+    }
+  })
+  .join('');
 }
 
-console.log(oddOrEven(121))
+console.log(invert("dLROW YM sI HsEt"));
