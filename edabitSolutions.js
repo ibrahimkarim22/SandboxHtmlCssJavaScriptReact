@@ -373,15 +373,56 @@
 ////////////////////////////////////////////////
 //https://edabit.com/challenge/TYcMysG6yy4RKEQPP
 
-function invert(string) {
-  return string.split('').reverse().map(char => {
-    if (char === char.toUpperCase()) {
-      return char.toLowerCase();
-    } else {
-      return char.toUpperCase();
-    }
-  })
-  .join('');
-}
+// function invert(string) {
+//   return string.split('').reverse().map(char => {
+//     if (char === char.toUpperCase()) {
+//       return char.toLowerCase();
+//     } else {
+//       return char.toUpperCase();
+//     }
+//   })
+//   .join('');
+// }
 
-console.log(invert("dLROW YM sI HsEt"));
+// console.log(invert("dLROW YM sI HsEt"));
+/////////////////////////////////////////
+//https://edabit.com/challenge/7pkKPYtTJzpxRMckZ
+
+// function isPositiveDominant(arr) {
+//   let uniquePositives = new Set();
+//   let uniqueNegatives = new Set();
+  
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       uniquePositives.add(arr[i]);
+//     } else if (arr[i] < 0) {
+//       uniqueNegatives.add(arr[i]);
+//     }
+//   }
+//   return uniquePositives.size > uniqueNegatives.size;
+// }
+
+// console.log(isPositiveDominant([1, 1, 1, -3, -4]));
+// console.log(isPositiveDominant([5, 99, 832, -3, -4]));
+//////////////////////////
+
+//https://edabit.com/challenge/yFJzLfYghz7ZtsyAN
+
+// function num_of_digits(num) {
+//   if (num === 0) return 1;
+
+//   num = Math.abs(num);
+
+//   let count = 0;
+//   while (num !== 0) {
+//     num = Math.floor(num / 10);
+//     count++;
+//   }
+//   return count;
+// }
+
+
+// console.log(num_of_digits(1000));
+////////////////////
+
+//
