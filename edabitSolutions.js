@@ -426,3 +426,44 @@
 ////////////////////
 
 //
+
+// function chosenWine(wines) {
+//   if (wines === 0) {
+//     return null;
+//   }
+
+//   if (wines.length === 1) {
+//     return wines[0].name;
+//   }
+
+//   wines.sort((a, b) => a.price - b.price);
+//   return wines[1] ? wines[1].name : null;
+// }
+
+// console.log(chosenWine([
+//   { name: "Wine A", price: 8.99 },
+//   { name: "Wine 32", price: 13.99 },
+//   { name: "Wine 9", price: 10.99 }
+// ]));
+////////////////////
+
+///https://edabit.com/challenge/uScx6aGXmNu27NYWz
+
+
+function getFrequencies(arr) {
+  const frequencies = {};
+
+  for (let element of arr) {
+    if (frequencies[element]) {
+      frequencies[element]++;
+    } else {
+      frequencies[element] = 1;
+    }
+  }
+
+  return frequencies
+}
+console.log(getFrequencies(["A", "B", "A", "A", "A"]));
+
+
+
