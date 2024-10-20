@@ -493,3 +493,39 @@
 // }
 // console.log(addName({}, "Brutus", 300));
 /////////////
+
+/////////////
+//https://edabit.com/challenge/x2LS9YvyK38uH8B7J
+
+// function mostExpensive(obj) {
+//   let mostExpensiveItem = "";
+//   let highestPrice = 0;
+
+//   for (let item in obj) {
+//       if (obj[item] > highestPrice) {
+//           highestPrice = obj[item];
+//           mostExpensiveItem = item;
+//       }
+//   }
+
+//   return `The most expensive one is the ${mostExpensiveItem}`;
+// }
+
+// console.log(mostExpensive({
+//   "Diamond Earrings": 980,
+//   "Gold Watch": 250,
+//   "Pearl Necklace": 4650
+// })); 
+////////////////////////////
+
+//https://edabit.com/challenge/paMpZoEJ6gr4feMS3
+
+// function getVodkaBottle(obj, num) {
+//   for (let o in obj) {
+//     if (o.startsWith("Rammstein") && obj[o] === num) {
+//       return o;
+//     }
+//   }
+//   return null;
+// }
+// console.log(getVodkaBottle({ whiskey: 100, "Rammstein A": 100, "Rammstein B": 50 }, 100));
