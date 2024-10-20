@@ -450,20 +450,46 @@
 ///https://edabit.com/challenge/uScx6aGXmNu27NYWz
 
 
-function getFrequencies(arr) {
-  const frequencies = {};
+// function getFrequencies(arr) {
+//   const frequencies = {};
 
-  for (let element of arr) {
-    if (frequencies[element]) {
-      frequencies[element]++;
-    } else {
-      frequencies[element] = 1;
-    }
-  }
+//   for (let element of arr) {
+//     if (frequencies[element]) {
+//       frequencies[element]++;
+//     } else {
+//       frequencies[element] = 1;
+//     }
+//   }
 
-  return frequencies
-}
-console.log(getFrequencies(["A", "B", "A", "A", "A"]));
+//   return frequencies
+// }
+// console.log(getFrequencies(["A", "B", "A", "A", "A"]));
 
 
+/////////////////////
+//https://edabit.com/challenge/8khL2WEhZ6M9onHL4
+// function countLayers(rug) {
+//   let count = 1; 
+  
+//   for (let i = 0; i < Math.floor(rug.length / 2); i++) {
+//       if (rug[i] !== rug[i + 1]) {
+//           count++;
+//       }
+//   }
+  
+//   return count;
+// }
+// console.log(countLayers([
+//   "AAAA",
+//   "ABBA",
+//   "AAAA"
+// ])); 
+/////////////////////
+//https://edabit.com/challenge/9KEKJG5PZTFmG3Zau
 
+// function addName(obj, name, value) {
+// 	obj[name] = value;
+//   return obj;
+// }
+// console.log(addName({}, "Brutus", 300));
+/////////////
