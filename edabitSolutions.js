@@ -529,3 +529,48 @@
 //   return null;
 // }
 // console.log(getVodkaBottle({ whiskey: 100, "Rammstein A": 100, "Rammstein B": 50 }, 100));
+
+///////////////////
+//
+
+// function consecutiveCombo(a1, a2) {
+// 	const combinedArr = [...a1, ...a2];
+	
+// 	combinedArr.sort((a, b) => a - b);
+	
+// 	for (let i = 1; i < combinedArr.length; i++) {
+// 		if (combinedArr[i] - combinedArr[i - 1] !== 1) {
+// 			return false;
+// 		}
+// 	}
+// 	return true;
+// }
+
+// console.log(consecutiveCombo([7, 4, 5, 1], [2, 3, 6])); // true
+// console.log(consecutiveCombo([1, 4, 6, 5], [2, 7, 8, 9])); // false
+/////////////////////////
+
+//https://edabit.com/challenge/jtAvQyyDpFA2EaCcj
+
+function commonElements(arr1, arr2) {
+	
+ let i = 0;
+ let j = 0;
+ let similars = [];
+
+ while (i < arr1.length && j < arr2.length) {
+  if (arr1[i] === arr2[j]) {
+    similars.push(arr1[i]);
+    i++;
+    j++;
+  } else if (arr1[i] < arr2[j]) {
+    i++;
+  } else {
+    j++
+  }
+ }
+ return similars;
+}
+
+console.log(commonElements([1, 3, 5], [1, 5, 7])); 
+console.log(commonElements([1, 2, 4], [2, 3, 4])); 
