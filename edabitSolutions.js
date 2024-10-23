@@ -615,3 +615,41 @@
 
 // console.log(isPandigital(98140723568910));  
 // console.log(isPandigital(90864523148909)); 
+/////////////////////
+
+//https://edabit.com/challenge/EpwHHdFF6EABASmhL
+
+
+// function multiplicationTable(n) {
+// 	let table = [];
+
+//   for (let i = 1; i <= n; i++) {
+//     let row = [];
+//     for (let j = 1; j <= n; j++) {
+//       row.push(i * j);
+//     }
+//     table.push(row);
+//   }
+//   return table;
+// }
+// console.log(multiplicationTable(3));
+// console.log(multiplicationTable(5));
+///////////////////////
+
+//https://edabit.com/challenge/LoBo2DoWQuuzSr6Ft
+
+function threeLetterCollection(s) {
+  if (s.length < 3) return [];
+
+  let result = [];
+
+  for (let i = 0; i <= s.length - 3; i++) {
+    result.push(s.substring(i, i + 3));
+  }
+
+  return result.sort();
+}
+
+console.log(threeLetterCollection("edabit"));
+console.log(threeLetterCollection("slap"));
+console.log(threeLetterCollection("hi"));
