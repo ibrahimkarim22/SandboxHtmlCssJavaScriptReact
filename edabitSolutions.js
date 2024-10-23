@@ -552,25 +552,66 @@
 
 //https://edabit.com/challenge/jtAvQyyDpFA2EaCcj
 
-function commonElements(arr1, arr2) {
+// function commonElements(arr1, arr2) {
 	
- let i = 0;
- let j = 0;
- let similars = [];
+//  let i = 0;
+//  let j = 0;
+//  let similars = [];
 
- while (i < arr1.length && j < arr2.length) {
-  if (arr1[i] === arr2[j]) {
-    similars.push(arr1[i]);
-    i++;
-    j++;
-  } else if (arr1[i] < arr2[j]) {
-    i++;
-  } else {
-    j++
-  }
- }
- return similars;
-}
+//  while (i < arr1.length && j < arr2.length) {
+//   if (arr1[i] === arr2[j]) {
+//     similars.push(arr1[i]);
+//     i++;
+//     j++;
+//   } else if (arr1[i] < arr2[j]) {
+//     i++;
+//   } else {
+//     j++
+//   }
+//  }
+//  return similars;
+// }
 
-console.log(commonElements([1, 3, 5], [1, 5, 7])); 
-console.log(commonElements([1, 2, 4], [2, 3, 4])); 
+// console.log(commonElements([1, 3, 5], [1, 5, 7])); 
+// console.log(commonElements([1, 2, 4], [2, 3, 4])); 
+
+/////////////////////
+//https://edabit.com/challenge/95YiRnBSnfzSQWAuu
+
+// function product(a1, a2, b1, b2, c1, c2) {
+//   let firstProduct = a1 * b1 * c1;
+//   let secondProduct = a2 * b2 * c2;
+//   return firstProduct + secondProduct;
+// }
+
+// //currying
+
+// function product(a1, a2) {
+// 	return function (b1, b2) {
+//     return function(c1, c2) {
+//     let firstProduct = a1 * b1 * c1;
+//     let secondProduct = a2 * b2 * c2;
+//     return firstProduct + secondProduct;
+//   }
+// }
+// }
+
+// console.log(product(1, 2, 1, 2, 2, 3)); 
+// console.log(product(10, 2, 5, 0, 2, 3));
+
+////////////////////////////////////
+
+//https://edabit.com/challenge/NXTrfGBXTKg3Z9jkz
+
+// function isPandigital(num) {
+//   const digits = new Set(num.toString());
+
+//   if (digits.size === 10) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(isPandigital(98140723568910));  
+// console.log(isPandigital(90864523148909)); 
