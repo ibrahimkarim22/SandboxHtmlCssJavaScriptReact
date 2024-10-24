@@ -638,18 +638,35 @@
 
 //https://edabit.com/challenge/LoBo2DoWQuuzSr6Ft
 
-function threeLetterCollection(s) {
-  if (s.length < 3) return [];
+// function threeLetterCollection(s) {
+//   if (s.length < 3) return [];
 
-  let result = [];
+//   let result = [];
 
-  for (let i = 0; i <= s.length - 3; i++) {
-    result.push(s.substring(i, i + 3));
-  }
+//   for (let i = 0; i <= s.length - 3; i++) {
+//     result.push(s.substring(i, i + 3));
+//   }
 
-  return result.sort();
-}
+//   return result.sort();
+// }
 
-console.log(threeLetterCollection("edabit"));
-console.log(threeLetterCollection("slap"));
-console.log(threeLetterCollection("hi"));
+// console.log(threeLetterCollection("edabit"));
+// console.log(threeLetterCollection("slap"));
+// console.log(threeLetterCollection("hi"));
+//////////////////////////////
+
+//https://edabit.com/challenge/f3Lc7Z5dK3p8dahoz
+
+// function canConcatenate(arr, target) {
+//   const flattened = arr.flat();
+
+//   const sortedFlattened = flattened.sort((a, b) => a - b);
+//   const sortedTarget = target.sort((a, b) => a - b);
+
+//   return JSON.stringify(sortedFlattened) === JSON.stringify(sortedTarget);
+// }
+
+// console.log(canConcatenate([[1, 2, 3, 4], [5, 6], [7]], [1, 2, 3, 4, 5, 6, 7]));
+// console.log(canConcatenate([[2, 1, 3], [5, 4, 7, 6]], [7, 6, 5, 4, 3, 2, 1]));  
+// console.log(canConcatenate([[2, 1, 3], [5, 4, 7, 6, 7]], [1, 2, 3, 4, 5, 6, 7]));  
+
