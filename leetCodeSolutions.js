@@ -43,7 +43,7 @@ var longestCommonPrefix = function(strs) {
     if (strs.length === 0) return ""; //edge case: empty array
     let prefix = strs[0]; //assume the first string is a prefix
 
-    for (let i = 1; strs.length; i++) { //compare starting from second string
+    for (let i = 1; i < strs.length; i++) { //compare starting from second string
         while (strs[i].indexOf(prefix) !== 0) {
             prefix = prefix.slice(0, -1); //shorten prefix by removing the last character
             if (prefix === "") return "";// no common prefix
