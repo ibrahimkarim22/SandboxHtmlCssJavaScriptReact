@@ -670,3 +670,56 @@
 // console.log(canConcatenate([[2, 1, 3], [5, 4, 7, 6]], [7, 6, 5, 4, 3, 2, 1]));  
 // console.log(canConcatenate([[2, 1, 3], [5, 4, 7, 6, 7]], [1, 2, 3, 4, 5, 6, 7]));  
 
+////////////////////////////////////////////////
+
+//https://edabit.com/challenge/Gz27eKkMcLarzE5Rj
+
+// function sortByLength(arr) {
+// 	return arr.sort((a, b) => a.length - b.length); //a - b is for numbers a.length b.length is for strings
+// 	}
+//   sortByLength(["Google", "Apple", "Microsoft"])
+
+
+/////////////////////////////////////////
+
+//https://edabit.com/challenge/vtDnynHfWCnMaKYym
+
+// function factorial(num) {
+// 	let store = 1;
+// 	for (let i = 1; i <= num; i++) {
+// 		store *= i;						
+	
+// 	}
+// 	return store;
+// }
+
+// console.log(factorial(5))
+
+///////////////////////////
+//https://edabit.com/challenge/Twbmxzd3JwkkqAWES
+
+
+// function isOmnipresent(arr, val) {
+// 	for (let i = 0; i < arr.length; i++) {
+// 		if (!arr[i].includes(val)) {
+// 			return false
+// 		}
+// 	}
+// 	return true
+// }
+
+// console.log(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1));
+// console.log(isOmnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 6));
+
+//////////////////////////////////
+//https://edabit.com/challenge/PBXe4hLP3mbbMEFt8
+
+
+// function highLow(str) {
+// 	const arr = str.split(' ').map(Number);
+// 	const max = Math.max(...arr);
+// 	const min = Math.min(...arr);
+//     return `${max} ${min}`;
+// 	}
+
+// console.log(highLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"))
