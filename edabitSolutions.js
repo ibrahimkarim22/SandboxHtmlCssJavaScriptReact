@@ -723,3 +723,36 @@
 // 	}
 
 // console.log(highLow("4 5 29 54 4 0 -214 542 -64 1 -3 6 -6"))
+
+/////////////////////////////////////
+
+//https://edabit.com/challenge/5erCDJ8eJDrXkmwTK
+// function makesTen(a, b) {
+// 	if (a === 10 || b === 10 || a + b === 10) {
+// 		return true
+// 	} else return false
+// }
+// console.log(makesTen(9, 10));
+// console.log(makesTen(9, 9));
+
+//////////////////////////////
+//https://edabit.com/challenge/KYeCAfYxsvomapQg2
+
+function allPairs(arr, target) {
+  const pairs = [];
+
+  //outer loop to pick the first element in each pair
+  for (let i = 0; i < arr.length; i++) {
+      //inner loop to pick the second element in each pair
+      for (let j = i + 1; j < arr.length; j++) {
+          if (arr[i] + arr[j] === target) {
+              //smaller number is first in the pair
+              let pair = [arr[i], arr[j]].sort((a, b) => a - b);
+              pairs.push(pair);
+          }
+      }
+  }
+
+  //sort pairs in ascending order based on the first number in each pair
+  return pairs.sort((a, b) => a[0] - b[0]);
+}
