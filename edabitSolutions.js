@@ -738,21 +738,82 @@
 //////////////////////////////
 //https://edabit.com/challenge/KYeCAfYxsvomapQg2
 
-function allPairs(arr, target) {
-  const pairs = [];
+// function allPairs(arr, target) {
+//   const pairs = [];
 
-  //outer loop to pick the first element in each pair
+//   //outer loop to pick the first element in each pair
+//   for (let i = 0; i < arr.length; i++) {
+//       //inner loop to pick the second element in each pair
+//       for (let j = i + 1; j < arr.length; j++) {
+//           if (arr[i] + arr[j] === target) {
+//               //smaller number is first in the pair
+//               let pair = [arr[i], arr[j]].sort((a, b) => a - b);
+//               pairs.push(pair);
+//           }
+//       }
+//   }
+
+//   //sort pairs in ascending order based on the first number in each pair
+//   return pairs.sort((a, b) => a[0] - b[0]);
+// }
+//////////////////////
+
+//https://edabit.com/challenge/PYXbvQh9W3c9i72xx
+
+
+// function vendingMachine(products, money, productNumber) {
+// 	if (productNumber < 1 || productNumber > products.number) {
+// 		return "Enter a valid product number"
+// 	}
+// 	const product = products[productNumber - 1]; //get the index
+// 	const price = product.price;
+	
+// 	if (money < price) { //check if user has enough money
+// 		return "Not enough money for this product"
+// 	}
+	
+// 	let changeAmount = money - price; //calc change to be given back
+// 	const coins = [500, 200, 100, 50, 20, 10];
+// 	const change = [];
+	
+// 	for (let coin of coins) {
+// 			while (changeAmount >= coin) {
+// 				change.push(coin);// if the change amount is bigger then add the change to change array
+// 				changeAmount -= coin; // also subtract the returned coins from change amounts until it reaches 0
+// 			}
+// 		}
+		
+// 		return {
+// 			product: product.name,
+// 			change: change
+// 		}
+// 	}
+
+//   console.log(vendingMachine(products, 500, 8))
+//   console.log(vendingMachine(products, 100, 9))
+
+//////////////////////////////
+//https://edabit.com/challenge/p7gLw52gxdKENTkcP
+
+function maximumSeating(arr) {
+  let addSeats = 0;
+
   for (let i = 0; i < arr.length; i++) {
-      //inner loop to pick the second element in each pair
-      for (let j = i + 1; j < arr.length; j++) {
-          if (arr[i] + arr[j] === target) {
-              //smaller number is first in the pair
-              let pair = [arr[i], arr[j]].sort((a, b) => a - b);
-              pairs.push(pair);
-          }
+      //check if the seat is empty with at least two empty seats on both sides
+      if (
+          arr[i] === 0 &&
+          (i === 0 || arr[i - 1] === 0) && //check the seat before
+          (i <= 1 || arr[i - 2] === 0) && //check two seats before
+          (i >= arr.length - 1 || arr[i + 1] === 0) && //check the seat after
+          (i >= arr.length - 2 || arr[i + 2] === 0) //check two seats after
+      ) {
+          arr[i] = 1;//place a person in the current seat
+          addSeats++;//increment the counter
+          i += 2;//skip the next two seats to maintain the gap
       }
   }
 
-  //sort pairs in ascending order based on the first number in each pair
-  return pairs.sort((a, b) => a[0] - b[0]);
+  return addSeats;
 }
+console.log((maximumSeating([0, 0, 0, 1, 0, 0, 1, 0, 0, 0])))
+console.log((maximumSeating([0, 0, 0, 0])))
