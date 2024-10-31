@@ -60,35 +60,72 @@
 //https://leetcode.com/problems/roman-to-integer/
 
 
-var romanToInt = function (s) {
-    //map of roman numeral to their integer values
-    const romanMap = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    };
+// var romanToInt = function (s) {
+//     //map of roman numeral to their integer values
+//     const romanMap = {
+//         'I': 1,
+//         'V': 5,
+//         'X': 10,
+//         'L': 50,
+//         'C': 100,
+//         'D': 500,
+//         'M': 1000
+//     };
 
-    let result = 0;
-    let i = 0;
+//     let result = 0;
+//     let i = 0;
 
-    while (i < s.length) {
-        const currentVal = romanMap[s[i]];
-        const nextVal = romanMap[s[i + 1]];
+//     while (i < s.length) {
+//         const currentVal = romanMap[s[i]];
+//         const nextVal = romanMap[s[i + 1]];
     
 
-    //if current value is less than the next value then subtract it
-    if (nextVal && currentVal < nextVal) {
-        result += nextVal - currentVal;
-        i += 2; //skipthe next character since its already been processed
-    } else {
-        result += currentVal;
-        i += 1;
-    }
-}
-return result;
+//     //if current value is less than the next value then subtract it
+//     if (nextVal && currentVal < nextVal) {
+//         result += nextVal - currentVal;
+//         i += 2; //skipthe next character since its already been processed
+//     } else {
+//         result += currentVal;
+//         i += 1;
+//     }
+// }
+// return result;
 
-};
+// };
+
+///////////////////////////////////
+//https://leetcode.com/problems/return-length-of-arguments-passed/
+
+// var argumentsLength = function(...args) {
+//     return args.length;
+// };
+
+
+//  console.log(argumentsLength(1, 2, 3));
+// consloe.log(argumentsLength({},null,"3"))
+
+////////////////////////////////////
+//https://leetcode.com/problems/score-of-a-string/submissions/1438628695/
+// var scoreOfString = function(s) {
+//     let score = 0;
+//     for (let i = 0; i < s.length - 1; i++) { // s.length - 1 so that the loop stops at the character before last and there would be no error
+//         //charCodeAt is a built in method to find the the strings ASCII/unicode value
+//          score += Math.abs(s.charCodeAt(i) -  s.charCodeAt(i + 1)) //use Math.abs to make sure the number is always return positive
+//     }
+//     return score;
+// };
+
+// console.log(scoreOfString("hello"))
+
+//////////////////////////////////////
+//https://leetcode.com/problems/add-two-promises/
+// const promise1 = new Promise(resolve => setTimeout(() => resolve(2), 20));
+// const promise2 = new Promise(resolve => setTimeout(() => resolve(5), 60));
+
+// var addTwoPromises = async function(promise1, promise2) {
+//     const result1 = await promise1;
+//     const result2 = await promise2;
+
+//     return result1 + result2
+// };
+// addTwoPromises(promise1, promise2).then(console.log);
