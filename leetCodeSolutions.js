@@ -149,18 +149,71 @@
 
 //https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/ 
 
-var minimumOperations = function(nums) {
-    let operations = 0;
-    for (let i = 0; i < nums.length; i++) {
-        let rem = nums[i] % 3;
-        if (rem === 2) {
-            operations += 1
-        } else if (rem === 1) {
-            operations += 1;
+// var minimumOperations = function(nums) {
+//     let operations = 0;
+//     for (let i = 0; i < nums.length; i++) {
+//         let rem = nums[i] % 3;
+//         if (rem === 2) {
+//             operations += 1
+//         } else if (rem === 1) {
+//             operations += 1;
+//         }
+//     }
+//     return operations;
+// };
+
+// const nums = [1, 2, 3, 4];
+// console.log(minimumOperations(nums));
+
+/////////////////////////////////////
+
+//https://leetcode.com/problems/rotate-string/description/
+
+// var rotateString = function(s, goal) {
+//     if (s.length !== goal.length) {
+//         return false;
+//     }
+//     let i = s + s;
+//     if (i.includes(goal)) {
+//         return true
+//     } else {
+//         return false;
+//     }
+// };
+
+// console.log(rotateString("abcde", "cdeab"))
+
+/////////////////////////////////
+
+//https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
+
+// var finalValueAfterOperations = function(operations) {
+//     let x = 0;
+//     for (let i = 0; i < operations.length; i++) {
+//         if (operations[i] === "X++" || operations[i] === "++X") {
+//             x += 1;
+//         } 
+//         else if (operations[i] === "X--" || operations[i] === "--X") {
+//             x -= 1;
+//     }
+//     }
+//     return x;
+// };
+
+// console.log(finalValueAfterOperations(["X++","++X","--X","X--"]))
+
+//////////////////////////////////
+
+//https://leetcode.com/problems/defanging-an-ip-address/
+
+var defangIPaddr = function(address) {
+    a = address.split('');
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === '.') {
+            a[i] = '[.]'
         }
     }
-    return operations;
+    return a.join('');
 };
 
-const nums = [1, 2, 3, 4];
-console.log(minimumOperations(nums));
+console.log(defangIPaddr("1.1.1.1"))
