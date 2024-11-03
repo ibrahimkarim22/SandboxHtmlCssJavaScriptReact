@@ -129,3 +129,38 @@
 //     return result1 + result2
 // };
 // addTwoPromises(promise1, promise2).then(console.log);
+
+/////////////////////////
+
+//https://leetcode.com/problems/build-array-from-permutation/
+
+// var buildArray = function(nums) {
+//     let ans = [];
+//     for (let i = 0; i < nums.length; i++) {
+//         ans[i] = nums[nums[i]];
+        
+//     }
+//     return ans;
+// };
+// const nums = [5, 0, 1, 2, 3, 4];
+// console.log(nums)
+
+//////////////////////////////
+
+//https://leetcode.com/problems/find-minimum-operations-to-make-all-elements-divisible-by-three/ 
+
+var minimumOperations = function(nums) {
+    let operations = 0;
+    for (let i = 0; i < nums.length; i++) {
+        let rem = nums[i] % 3;
+        if (rem === 2) {
+            operations += 1
+        } else if (rem === 1) {
+            operations += 1;
+        }
+    }
+    return operations;
+};
+
+const nums = [1, 2, 3, 4];
+console.log(minimumOperations(nums));
