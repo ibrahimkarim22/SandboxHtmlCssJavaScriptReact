@@ -206,14 +206,52 @@
 
 //https://leetcode.com/problems/defanging-an-ip-address/
 
-var defangIPaddr = function(address) {
-    a = address.split('');
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] === '.') {
-            a[i] = '[.]'
+// var defangIPaddr = function(address) {
+//     a = address.split('');
+//     for (let i = 0; i < a.length; i++) {
+//         if (a[i] === '.') {
+//             a[i] = '[.]'
+//         }
+//     }
+//     return a.join('');
+// };
+
+// console.log(defangIPaddr("1.1.1.1"))
+
+/////////////////////////////////
+
+//https://leetcode.com/problems/number-of-good-pairs/
+
+// var numIdenticalPairs = function(nums) {
+//     let count = 0;
+//     for (let i = 0; i < nums.length; i++) {
+//         for (let j = i + 1; j < nums.length; j++) { //j = i + 1 so that nums[i] doesnt count itself
+//             if (nums[j] === nums[i]) {
+//                 count++
+//             }
+//         }
+//     }
+//     return count;
+   
+// };
+
+// console.log(numIdenticalPairs([1,2,3,1,1,3]))
+
+///////////////////////////////////
+
+//https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/
+
+var differenceOfSums = function (n, m) {
+    let num1 = 0;
+    let num2 = 0;
+    for (let i = 1; i <= n; i++) {
+        if (i % m === 0) {
+            num2 += i
+        } else {
+            num1 += i
         }
     }
-    return a.join('');
+    return num1 - num2;
 };
 
-console.log(defangIPaddr("1.1.1.1"))
+console.log(differenceOfSums(5, 6));
