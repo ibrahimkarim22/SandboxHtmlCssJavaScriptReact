@@ -277,14 +277,43 @@
 /////////////////////////////
 //https://leetcode.com/problems/jewels-and-stones/
 
-var numJewelsInStones = function(jewels, stones) {
-    let result = 0;
-    for (let stone of stones) {
-        if (jewels.includes(stone)) {
-            result += 1;
+// var numJewelsInStones = function(jewels, stones) {
+//     let result = 0;
+//     for (let stone of stones) {
+//         if (jewels.includes(stone)) {
+//             result += 1;
+//         }
+//     }
+//     return result;
+// };
+
+// console.log(numJewelsInStones("aA", "aAbbbb"))
+
+//////////////////////////////////////////////
+
+//https://leetcode.com/problems/timeout-cancellation/
+
+// var cancellable = function(fn, args, t) {
+//     let timer = setTimeout(() => {
+//         fn(...args)
+//     }, t);
+//     return function() {
+//         clearTimeout(timer);
+//     };
+// };
+// const cancel = cancellable((x) => console.log(x * 5), [2], 20);
+
+//////////////////////////
+//https://leetcode.com/problems/find-words-containing-character/
+
+var findWordsContaining = function(words, x) {
+    let output = [];
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].includes(x)) {
+            output.push(i)
         }
     }
-    return result;
+    return output;
 };
 
-console.log(numJewelsInStones("aA", "aAbbbb"))
+console.log(findWordsContaining(['leet', 'code'], 'e'))
