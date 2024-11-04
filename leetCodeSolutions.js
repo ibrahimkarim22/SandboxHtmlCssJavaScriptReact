@@ -241,17 +241,50 @@
 
 //https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/
 
-var differenceOfSums = function (n, m) {
-    let num1 = 0;
-    let num2 = 0;
-    for (let i = 1; i <= n; i++) {
-        if (i % m === 0) {
-            num2 += i
-        } else {
-            num1 += i
+// var differenceOfSums = function (n, m) {
+//     let num1 = 0;
+//     let num2 = 0;
+//     for (let i = 1; i <= n; i++) {
+//         if (i % m === 0) {
+//             num2 += i
+//         } else {
+//             num1 += i
+//         }
+//     }
+//     return num1 - num2;
+// };
+
+// console.log(differenceOfSums(5, 6));
+
+/////////////////////////////////
+
+//https://leetcode.com/problems/the-two-sneaky-numbers-of-digitville/
+
+// var getSneakyNumbers = function(nums) {
+//     let repeated = [];
+//     for (let i = 0; i < nums.length; i++) {
+//         for (let j = i + 1; j < nums.length; j++) {
+//             if (nums[j] === nums[i]) {
+//                 repeated.push(nums[j]);
+//             }
+//         }
+//     }
+//     return repeated;
+// };
+
+// console.log(getSneakyNumbers([0, 3, 2, 1, 3, 2]))
+
+/////////////////////////////
+//https://leetcode.com/problems/jewels-and-stones/
+
+var numJewelsInStones = function(jewels, stones) {
+    let result = 0;
+    for (let stone of stones) {
+        if (jewels.includes(stone)) {
+            result += 1;
         }
     }
-    return num1 - num2;
+    return result;
 };
 
-console.log(differenceOfSums(5, 6));
+console.log(numJewelsInStones("aA", "aAbbbb"))
