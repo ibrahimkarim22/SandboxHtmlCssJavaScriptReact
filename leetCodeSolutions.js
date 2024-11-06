@@ -306,14 +306,53 @@
 //////////////////////////
 //https://leetcode.com/problems/find-words-containing-character/
 
-var findWordsContaining = function(words, x) {
-    let output = [];
-    for (let i = 0; i < words.length; i++) {
-        if (words[i].includes(x)) {
-            output.push(i)
-        }
-    }
-    return output;
-};
+// var findWordsContaining = function(words, x) {
+//     let output = [];
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i].includes(x)) {
+//             output.push(i)
+//         }
+//     }
+//     return output;
+// };
 
-console.log(findWordsContaining(['leet', 'code'], 'e'))
+// console.log(findWordsContaining(['leet', 'code'], 'e'))
+
+//////////////////////////
+//https://leetcode.com/problems/shuffle-the-array/
+// var shuffle = function(nums, n) {
+//     let x = [];
+//     let y = [];
+//     for (let i = 0; i < nums.length; i++) {
+//         if (i < n - 1) {
+//             x.push(nums[i])
+//         } else{
+//             y.push(nums[i])
+//         }
+//     }
+// };
+
+// console.log(shuffle([2,5,1,3,4,7], 3))
+
+////////////////////////////////
+//https://leetcode.com/problems/array-wrapper/
+class ArrayWrapper {
+    constructor(nums) {
+        this.nums = nums;
+    }
+
+    valueOf() {
+        return this.nums.reduce((acc, curr) => acc + curr, 0);
+    }
+
+    toString() {
+        return `[${this.nums.join(",")}]`;
+    }
+}
+
+const obj1 = new ArrayWrapper([1, 2]);
+const obj2 = new ArrayWrapper([3, 4]);
+
+console.log(obj1 + obj2); 
+console.log(String(obj1)); 
+console.log(String(obj2));
