@@ -336,23 +336,89 @@
 
 ////////////////////////////////
 //https://leetcode.com/problems/array-wrapper/
-class ArrayWrapper {
-    constructor(nums) {
-        this.nums = nums;
-    }
+// class ArrayWrapper {
+//     constructor(nums) {
+//         this.nums = nums;
+//     }
 
-    valueOf() {
-        return this.nums.reduce((acc, curr) => acc + curr, 0);
-    }
+//     valueOf() {
+//         return this.nums.reduce((acc, curr) => acc + curr, 0);
+//     }
 
-    toString() {
-        return `[${this.nums.join(",")}]`;
-    }
-}
+//     toString() {
+//         return `[${this.nums.join(",")}]`;
+//     }
+// }
 
-const obj1 = new ArrayWrapper([1, 2]);
-const obj2 = new ArrayWrapper([3, 4]);
+// const obj1 = new ArrayWrapper([1, 2]);
+// const obj2 = new ArrayWrapper([3, 4]);
 
-console.log(obj1 + obj2); 
-console.log(String(obj1)); 
-console.log(String(obj2));
+// console.log(obj1 + obj2); 
+// console.log(String(obj1)); 
+// console.log(String(obj2));
+
+/////////////////////////////////////////////////
+
+//https://leetcode.com/problems/convert-date-to-binary/
+
+// var convertDateToBinary = function(date) {
+//     const [year, month, day] = date.split("-")
+//     const binaryYear = parseInt(year, 10).toString(2);
+//     const binaryMonth = parseInt(month, 10).toString(2);
+//     const binaryDay = parseInt(day, 10).toString(2);
+
+//     return `${binaryYear}-${binaryMonth}-${binaryDay}` 
+//     }
+
+
+// console.log(convertDateToBinary("2080-02-29"))
+
+///////////////////////////////
+
+
+//https://leetcode.com/problems/permutation-difference-between-two-strings/description/
+
+// var findPermutationDifference = function(s, t) {
+//     const indexMap = {};
+
+//     for (let i = 0; i < t.length; i++) {
+//         indexMap[t[i]] = i; // {b: 0, a: 1, c: 2}
+//     }
+
+//     let totalDifferece = 0;
+
+//     for (let i = 0; i < s.length; i++) {
+//         const char = s[i]; // 'a', 'b', 'c'
+//         const sIndex = i; // 0, 1, 2
+//         const tIndex = indexMap[char] // 1, 0, 2
+//         totalDifferece += Math.abs(sIndex - tIndex);
+//     }
+//     return totalDifferece;
+// };
+
+// console.log(findPermutationDifference('abc', 'bac'))
+
+////////////////////////////////////////
+//https://leetcode.com/problems/richest-customer-wealth/
+
+
+// var maximumWealth = function(accounts) {
+//     let maxWealth = 0;
+//     for (let i = 0; i < accounts.length; i++) {
+//         let currWealth = accounts[i].reduce((acc, curr) => acc + curr, 0);
+    
+//     if (currWealth > maxWealth) {
+//         maxWealth = currWealth;
+//     }
+//     }
+//     return maxWealth
+// };
+
+// var maximumWealth = function(accounts) {
+//     let arr = accounts.map(customer => 
+//         customer.reduce((acc, curr) => acc + curr, 0)
+//     );
+//     return Math.max(...arr);
+// };
+
+// console.log(maximumWealth([[1, 2, 3], [2, 3, 4], [4, 6, 7]]))
