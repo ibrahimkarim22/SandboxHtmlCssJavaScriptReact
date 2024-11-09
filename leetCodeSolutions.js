@@ -427,24 +427,93 @@
 //https://leetcode.com/problems/count-the-number-of-consistent-strings/
 
 
-var countConsistentStrings = function(allowed, words) {
-    let count = 0;
-    let a = allowed.split('');
-    console.log(a);
-    for (let i = 0; i < words.length; i++) {
-        let isConsistent = true;
+// var countConsistentStrings = function(allowed, words) {
+//     let count = 0;
+//     let a = allowed.split('');
+//     console.log(a);
+//     for (let i = 0; i < words.length; i++) {
+//         let isConsistent = true;
 
-        for (let j = 0; j < words[i].length; j++) {
-            if (!a.includes(words[i][j])) {
-                isConsistent = false;
-                break;
+//         for (let j = 0; j < words[i].length; j++) {
+//             if (!a.includes(words[i][j])) {
+//                 isConsistent = false;
+//                 break;
+//             }
+//         }
+//         if (isConsistent) {
+//             count++;
+//         }
+//     }
+//     return count;
+// };
+
+// console.log(countConsistentStrings("ab", ["ad","bd","aaab","baa","badab"]))
+
+///////////////////////////////////////////////
+//https://leetcode.com/problems/design-parking-system/
+
+// var ParkingSystem = function (big, medium, small) {
+//     this.big = big;
+//     this.medium = medium;
+//     this.small = small;
+// };
+
+
+// ParkingSystem.prototype.addCar = function(carType) {
+//     if (carType === 1) { 
+//         if (this.big > 0) {
+//             this.big--;
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     } else if (carType === 2) {
+//         if (this.medium > 0) {
+//             this.medium--;
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     } else if (carType === 3) { 
+//         if (this.small > 0) {
+//             this.small--;
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+// };
+
+class ParkingSystem {
+    constructor(big, medium, small) {
+        this.big = big;
+        this.medium = medium;
+        this.small = small;
+    }
+    addCar(carType) {
+        if (carType === 1) { 
+            if (this.big > 0) {
+                this.big--;
+                return true;
+            } else {
+                return false;
+            }
+        } else if (carType === 2) { 
+            if (this.medium > 0) {
+                this.medium--;
+                return true;
+            } else {
+                return false;
+            }
+        } else if (carType === 3) { 
+            if (this.small > 0) {
+                this.small--;
+                return true;
+            } else {
+                return false;
             }
         }
-        if (isConsistent) {
-            count++;
-        }
     }
-    return count;
-};
+}
 
-console.log(countConsistentStrings("ab", ["ad","bd","aaab","baa","badab"]))
+const parkingSystem = new ParkingSystem(1, 1, 0);
