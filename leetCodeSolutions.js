@@ -422,3 +422,29 @@
 // };
 
 // console.log(maximumWealth([[1, 2, 3], [2, 3, 4], [4, 6, 7]]))
+
+////////////////////////////////////////////////////
+//https://leetcode.com/problems/count-the-number-of-consistent-strings/
+
+
+var countConsistentStrings = function(allowed, words) {
+    let count = 0;
+    let a = allowed.split('');
+    console.log(a);
+    for (let i = 0; i < words.length; i++) {
+        let isConsistent = true;
+
+        for (let j = 0; j < words[i].length; j++) {
+            if (!a.includes(words[i][j])) {
+                isConsistent = false;
+                break;
+            }
+        }
+        if (isConsistent) {
+            count++;
+        }
+    }
+    return count;
+};
+
+console.log(countConsistentStrings("ab", ["ad","bd","aaab","baa","badab"]))
