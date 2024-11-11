@@ -484,36 +484,64 @@
 //     }
 // };
 
-class ParkingSystem {
-    constructor(big, medium, small) {
-        this.big = big;
-        this.medium = medium;
-        this.small = small;
-    }
-    addCar(carType) {
-        if (carType === 1) { 
-            if (this.big > 0) {
-                this.big--;
-                return true;
-            } else {
-                return false;
-            }
-        } else if (carType === 2) { 
-            if (this.medium > 0) {
-                this.medium--;
-                return true;
-            } else {
-                return false;
-            }
-        } else if (carType === 3) { 
-            if (this.small > 0) {
-                this.small--;
-                return true;
-            } else {
-                return false;
-            }
-        }
-    }
-}
+// class ParkingSystem {
+//     constructor(big, medium, small) {
+//         this.big = big;
+//         this.medium = medium;
+//         this.small = small;
+//     }
+//     addCar(carType) {
+//         if (carType === 1) { 
+//             if (this.big > 0) {
+//                 this.big--;
+//                 return true;
+//             } else {
+//                 return false;
+//             }
+//         } else if (carType === 2) { 
+//             if (this.medium > 0) {
+//                 this.medium--;
+//                 return true;
+//             } else {
+//                 return false;
+//             }
+//         } else if (carType === 3) { 
+//             if (this.small > 0) {
+//                 this.small--;
+//                 return true;
+//             } else {
+//                 return false;
+//             }
+//         }
+//     }
+// }
 
-const parkingSystem = new ParkingSystem(1, 1, 0);
+// const parkingSystem = new ParkingSystem(1, 1, 0);
+
+//////////////////////////////////////
+
+//https://leetcode.com/problems/smallest-even-multiple/
+
+// var smallestEvenMultiple = function(n) {
+//     return n % 2 === 0 ? n : n * 2
+// };
+
+// console.log(smallestEvenMultiple(5));
+// console.log(smallestEvenMultiple(15))
+// console.log(smallestEvenMultiple(20))
+
+///////////////////////////////////////
+
+//https://leetcode.com/problems/number-of-employees-who-met-the-target/
+
+// var numberOfEmployeesWhoMetTarget = function(hours, target) {
+//     let met = 0
+//     for (let i = 0; i < hours.length; i++) {
+//         if (hours[i] >= target) {
+//             met++;
+//         }
+//     }
+//     return met;
+// };
+
+// console.log(numberOfEmployeesWhoMetTarget([1, 3, 5, 4, 8], 4))
