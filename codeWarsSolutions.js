@@ -124,3 +124,30 @@
 //    }
 
 //    console.log(firstNonRepeatingLetter('moonmen'))
+
+///////////////////////////////////////
+//https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/javascript
+
+function stockList(books, categories) {
+    if (books.length === 0 || categories.length === 0) {
+        return ""
+    }
+    //initialize a result object for category counts
+    const result = {};
+    categories.forEach(cat => result[cat] = 0);
+
+    //sum up quanitites for each category in the books array
+    books.forEach(book => {
+        const [code, quantity] = book.split(" ");
+        const category = code[0];
+
+        if (result.hasOwnProperty(category)) {
+            result[category] += parseInt(quantity, 10);
+        }
+    });
+    return categories.map(cat => `({${cat} : ${result[cat]}})`).join(" - ");
+}
+
+const books = ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"];
+const categories = ["A", "B", "C", "D"];
+console.log(stockList(books, categories)); 
