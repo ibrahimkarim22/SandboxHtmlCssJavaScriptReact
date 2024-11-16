@@ -186,3 +186,49 @@
 
 //   console.log(queueTime([1,2,3,4], 1))
 //   console.log(queueTime([2,2,3,3,4,4], 2))
+
+//////////////////////////////////////////
+
+//https://www.codewars.com/kata/568d0dd208ee69389d000016/train/javascript
+
+
+// function rentalCarCost(d) {
+//     let total = d * 40;
+//     if (d >= 7) {
+//       total -= 50;
+//     } else if (d >= 3) {
+//       total -= 20;
+//     }
+//     return total;
+//   }
+
+//   console.log(rentalCarCost(7), 230)
+
+///////////////////////////////////////////////////////
+//https://www.codewars.com/kata/5861d28f124b35723e00005e/train/javascript
+// const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+//     return distanceToPump > mpg * fuelLeft ? false : true;
+//       }
+
+// console.log(zeroFuel(50, 25, 2));
+// console.log(zeroFuel(50, 25, 1));
+
+/////////////////////////////////////////////////
+// /https://www.codewars.com/kata/5b077ebdaf15be5c7f000077/train/javascript
+
+// var countSheep = function (num){
+//     if (num === 0) {
+//       return "";
+//     }
+//     let result = "";
+//     for (let i = 1; i <= num; i++) {
+//       result += `${i} sheep...`
+//     }
+//     return result;
+    
+//   }
+
+// console.log(countSheep(7));
+
+
+////////////////////////
