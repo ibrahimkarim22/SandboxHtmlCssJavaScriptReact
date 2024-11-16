@@ -128,26 +128,61 @@
 ///////////////////////////////////////
 //https://www.codewars.com/kata/54dc6f5a224c26032800005c/train/javascript
 
-function stockList(books, categories) {
-    if (books.length === 0 || categories.length === 0) {
-        return ""
-    }
-    //initialize a result object for category counts
-    const result = {};
-    categories.forEach(cat => result[cat] = 0);
+// function stockList(books, categories) {
+//     if (books.length === 0 || categories.length === 0) {
+//         return ""
+//     }
+//     //initialize a result object for category counts
+//     const result = {};
+//     categories.forEach(cat => result[cat] = 0);
 
-    //sum up quanitites for each category in the books array
-    books.forEach(book => {
-        const [code, quantity] = book.split(" ");
-        const category = code[0];
+//     //sum up quanitites for each category in the books array
+//     books.forEach(book => {
+//         const [code, quantity] = book.split(" ");
+//         const category = code[0];
 
-        if (result.hasOwnProperty(category)) {
-            result[category] += parseInt(quantity, 10);
-        }
-    });
-    return categories.map(cat => `({${cat} : ${result[cat]}})`).join(" - ");
-}
+//         if (result.hasOwnProperty(category)) {
+//             result[category] += parseInt(quantity, 10);
+//         }
+//     });
+//     return categories.map(cat => `({${cat} : ${result[cat]}})`).join(" - ");
+// }
 
-const books = ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"];
-const categories = ["A", "B", "C", "D"];
-console.log(stockList(books, categories)); 
+// const books = ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"];
+// const categories = ["A", "B", "C", "D"];
+// console.log(stockList(books, categories)); 
+
+/////////////////////////////////////////////////////
+
+//https://www.codewars.com/kata/59ca8246d751df55cc00014c/train/javascript
+
+// function hero(bullets, dragons){
+//     const x = dragons * 2;
+//      return x <= bullets ? true : false;
+//   }
+//   console.log(hero(10, 5))
+//   console.log(hero(7, 4))
+//////////////////////////////////
+
+
+//https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/javascript
+// function queueTime(customers, n) {
+//     if (customers.length === 0) {
+//       return 0;
+//     }
+//     if (n === 1) {
+//       return customers.reduce((acc, curr) => acc + curr, 0)
+//     }
+    
+//     const tills = new Array(n).fill(0);
+    
+//    for (let time of customers) {
+//      const nextTill = tills.indexOf(Math.min(...tills));
+//      tills[nextTill] += time;
+     
+//    }  
+//      return Math.max(...tills)
+//   }
+
+//   console.log(queueTime([1,2,3,4], 1))
+//   console.log(queueTime([2,2,3,3,4,4], 2))
