@@ -232,3 +232,32 @@
 
 
 ////////////////////////
+
+
+//https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/javascript
+
+// function longest(s1, s2) {
+
+//     const combined = s1 + s2;
+//     console.log(combined)
+//     const unique = new Set(combined);
+//     console.log(unique)
+//     return Array.from(unique).sort().join('')  
+    
+//   }
+
+//   console.log(longest("aretheyhere", "yestheyarehere"))
+
+//////////////////////////////////////////
+//https://www.codewars.com/kata/568dcc3c7f12767a62000038/train/javascript
+
+// function setAlarm(employed, vacation){
+//     if (employed && !vacation){
+//      return true;
+//       } else return false;
+//   }
+
+//   console.log(setAlarm(true, true));
+//   console.log(setAlarm(true, false));
+
+//////////////////////////////
