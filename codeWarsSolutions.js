@@ -261,3 +261,43 @@
 //   console.log(setAlarm(true, false));
 
 //////////////////////////////
+
+//https://www.codewars.com/kata/57eadb7ecd143f4c9c0000a3/train/javascript
+
+
+
+// function abbrevName(name) {
+//     let initials = [];
+//     const arr = name.split(' ');
+//     for (let i = 0; i < arr.length; i++) {
+//             initials.push(arr[i][0].toUpperCase());
+//             console.log(initials)
+//         }
+//         return initials.join('.');
+//     }
+
+// console.log(abbrevName('Frodo Baggins'))
+
+//////////////////////////////////////////////
+//https://www.codewars.com/kata/58649884a1659ed6cb000072/train/javascript
+
+// function updateLight(current) {
+//     if (current === 'green') {
+//       return 'yellow';
+//     } else if (current === 'yellow') {
+//       return 'red'
+//     } else if (current === 'red') {
+//       return 'green'
+//     }
+//   }
+
+// function updateLight(current) {
+//     return current === 'green' ? 'yellow' : current === 'red' ? 'green' : 'red'
+// }
+
+//   console.log(updateLight('green'))
+//   console.log(updateLight('yellow'))
+//   console.log(updateLight('red'))
+///////////////////////////////////
+
+//
