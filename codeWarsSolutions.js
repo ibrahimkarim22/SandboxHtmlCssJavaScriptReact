@@ -300,4 +300,26 @@
 //   console.log(updateLight('red'))
 ///////////////////////////////////
 
-//
+//https://www.codewars.com/kata/559590633066759614000063/train/javascript
+
+// function minMax(arr){
+//     let min = Math.min(...arr);
+//      let max = Math.max(...arr);
+     
+//      return [min, max]
+//    }
+// console.log(minMax([1, 2, 3, 4, 5]));
+
+///////////////////////////////
+//https://www.codewars.com/kata/563089b9b7be03472d00002b/train/javascript
+
+// Array.prototype.remove_ = function(integer_list, values_list){
+//     let arr = [];
+//     for (let i = 0; i < integer_list.length; i++) {
+//      if (!values_list.includes(integer_list[i])) {
+//        arr.push(integer_list[i])
+//      }
+//     }
+//     return arr;
+//   }
+  
