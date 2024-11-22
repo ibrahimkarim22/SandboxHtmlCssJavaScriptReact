@@ -373,4 +373,14 @@
 //   console.log(likes(['Alex', 'Jacob', 'Mark', 'Max']))
 
 ////////////////////////////////////////
+//https://www.codewars.com/kata/56541980fa08ab47a0000040/train/javascript
+
+// function printerError(s) {
+//     const total = s.length;
+//     const errorCount = s.split('').filter(char => char < 'a' || char > 'm').length;
+//     return `${errorCount}/${total}`
+//   }
+// console.log("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
+
+/////////////////////////////
 //
