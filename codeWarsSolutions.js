@@ -383,4 +383,49 @@
 // console.log("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz")
 
 /////////////////////////////
-//
+//https://www.codewars.com/kata/583710ccaa6717322c000105/train/javascript
+// function simpleMultiplication(number) {
+//     return number % 2 === 0 ? number * 8 : number * 9;
+//   }
+//   console.log(number(8));
+//   console.log(number(9))
+
+//////////////////////////////////
+
+//https://www.codewars.com/kata/515e271a311df0350d00000f/train/javascript
+
+// function squareSum(numbers){
+//     return numbers.reduce((acc, curr) => acc + (curr * curr), 0);
+//   }
+// console.log(numbers([1, 2, 3]))
+
+//////////////////////////////
+
+//https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript
+
+// function filter_list(l) {
+//     return l.filter((quotes) => typeof quotes === 'number' );
+    
+//   }
+//   console.log(filter_list([1,2,'a','b']))
+
+/////////////////////////////////////////
+
+
+//https://www.codewars.com/kata/54e6533c92449cc251001667/train/javascript
+
+// var uniqueInOrder=function(iterable){
+//     if (typeof iterable === 'string') {
+//       iterable.split('')
+//     } 
+//   const result = [];
+//   for (let i = 0; i < iterable.length; i++) {
+//     if (iterable[i] !== iterable[i - 1]) {
+//       result.push(iterable[i])
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(uniqueInOrder('AAAABBBCCDAABBB'))
+// console.log(uniqueInOrder([1, 2, 2, 2, 3, 3, 4, 1, 2]))
