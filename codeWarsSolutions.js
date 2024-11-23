@@ -429,3 +429,84 @@
 
 // console.log(uniqueInOrder('AAAABBBCCDAABBB'))
 // console.log(uniqueInOrder([1, 2, 2, 2, 3, 3, 4, 1, 2]))
+
+////////////////////////////////////////
+
+//https://www.codewars.com/kata/5648b12ce68d9daa6b000099
+
+// var number = function(busStops){
+//     let onBus = 0;
+//      let offBus = 0;
+     
+//      for (let i = 0; i < busStops.length; i++) {
+//        onBus += busStops[i][0];
+//        offBus += busStops[i][1]
+//      }
+//      return onBus - offBus
+       
+//    }
+
+// console.log(number([[10, 0], [3, 5], [5, 8]]))
+
+///////////////////////////////////
+
+//https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/javascript
+
+// function removeChar(str){
+//   const strArr = str.split('');
+  
+//  return strArr.slice(1, -1).join('')
+
+// };
+
+// console.log(removeChar('eloquent'))
+///////////////////////////////////////////
+//https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript
+
+// function noSpace(x){
+//     let result = [];
+//     let arr = x.split('');
+//     for (let i = 0; i < arr.length; i++) {
+//         if (x[i] !== ' '){
+//             result.push(x[i]);
+//         }
+//     } 
+//     return result.join('')
+//   }
+
+//   console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'))
+
+////////////////////////////////////////
+
+//https://www.codewars.com/kata/576b93db1129fcf2200001e6/train/javascript
+
+// function sumArray(array) {
+//     if (!Array.isArray(array) || array.length <= 1) {
+//         return 0;
+//     }
+//     const maxMinTotal = Math.max(...array) + Math.min(...array);
+//     const sumOfArr = array.reduce((acc, curr) => acc + curr, 0);
+//     return sumOfArr - maxMinTotal;
+// }
+
+// console.log(sumArray([6, 2, 1, 8, 10]))
+
+//////////////////////////////////
+
+//https://www.codewars.com/kata/54ff3102c1bad923760001f3/solutions/javascript
+
+// function getCount(str) {
+//     let result = 0;
+//     const vowels = ['a', 'e', 'i', 'o', 'u'];
+//     const string = str.split('');
+//     for (let i = 0; i < string.length; i++) {
+//         if (vowels.includes(string[i])) {
+//             result++;  
+//           }
+//     }
+//     return result   
+//   }
+
+//   console.log(getCount('abracadabra'))
+
+///////////////////////////////////////////////
