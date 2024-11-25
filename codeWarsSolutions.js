@@ -510,3 +510,60 @@
 //   console.log(getCount('abracadabra'))
 
 ///////////////////////////////////////////////
+//https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript
+
+
+// function order(words) {
+//     if (!words) return "";
+//     return words.split(' ').sort((a, b) => {
+//         const numberInA = [...a].find(char => !isNaN(char));
+//         const numberInB = [...b].find(char => !isNaN(char));
+//         return numberInA - numberInB
+//     }).join(' ')
+
+// }
+// console.log(order("is2 Thi1s T4est 3a"))
+
+////////////////////////////////////
+
+//https://www.codewars.com/kata/57356c55867b9b7a60000bd7/train/javascript
+
+
+// function basicOp(operation, value1, value2){
+//     switch(operation) {
+//         case "+": 
+//           return value1 + value2;
+//         case "-":
+//           return value1 - value2;
+//         case "*":
+//           return value1 * value2;
+//         case "/": 
+//           return value1 / value2;
+//     }
+//   }
+
+//   console.log(basicOp("+", 4, 7))
+//   console.log(basicOp("-", 15, 18));
+//   console.log(basicOp("*", 5, 5));
+//   console.log(basicOp("/", 49, 7))
+
+//////////////////////////////////////////
+
+//https://www.codewars.com/kata/57cebe1dc6fdc20c57000ac9/train/javascript
+
+// function findShort(s){
+//   const arr = s.split(' ');
+//   let shortest = arr[0].length
+  
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length < shortest) {
+//       shortest = arr[i].length;
+//     }
+//   }
+//   return shortest;
+// }
+//   console.log(findShort("Let's travel abroad shall we"));
+
+////////////////////////////////
+
+//
