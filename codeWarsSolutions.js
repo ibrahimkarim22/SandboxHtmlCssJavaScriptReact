@@ -566,4 +566,45 @@
 
 ////////////////////////////////
 
+//https://www.codewars.com/kata/57a429e253ba3381850000fb/train/javascript
+
+// function bmi(weight, height) {
+//     const bodyMass = weight / (height**2);
+    
+//       if (bodyMass <= 18.5) {
+//         return "Underweight"
+//       } else if (bodyMass <= 25.0) {
+//         return "Normal"
+//       } else if (bodyMass <= 30.0) {
+//         return "Overweight"
+//       } else if (bodyMass > 30) {
+//         return "Obese";
+//       }
+//   }
+
+//   console.log(bmi(50, 1.80));
+//   console.log(bmi(80, 1.80));
+//   console.log(bmi(90, 1.80));
+//   console.log(bmi(100, 1.80));
+
+///////////////////////////////////////////////
+
+//https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/javascript
+
+// const capitalize = function (sentence) {
+//     let arr = sentence.split(' ');
+    
+//     for (let i = 0; i < arr.length; i++) {
+//       if (arr[i].length > 0) {
+//         arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1);
+//       }
+//       }
+    
+//     return arr.join(' ')
+//   };
+
+// console.log(capitalize("This is the air that is the glorious sun"))
+
+////////////////////////////////////////////
+
 //
