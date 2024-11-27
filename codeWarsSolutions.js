@@ -607,4 +607,52 @@
 
 ////////////////////////////////////////////
 
-//
+//https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript
+
+// var isSquare = function(n) {
+//     if (n < 0) return false;
+//     let i = 0;
+
+//     while (i * i <= n) {
+//         if (i * i === n) {
+//             return true
+//         }
+//         i++;
+//     }
+//     return false;
+// }
+
+//   console.log(isSquare(25))
+//   console.log(isSquare(26))
+
+///////////////////////////////////////////
+
+//https://www.codewars.com/kata/55f2b110f61eb01779000053/javascript
+
+// function getSum(a, b) {
+//     let arr = [];
+
+//     let number = a;
+    
+//     while (number <= b) {
+//         arr.push(number)
+//         number++
+//     }
+//     return arr.reduce((acc, curr) => acc + curr)
+    
+// }
+// function getSum(a, b)
+// {
+//    let arr = [];
+//   let min = Math.min(a, b);
+//   let max = Math.max(a, b);
+  
+//   for (let number = min; number <= max; number++) {
+//     arr.push(number)
+//   }
+//   return arr.reduce((acc, curr) => acc + curr, 0)
+// }
+// console.log(getSum(1, 7))
+
+//////////////////////////////////////
+
