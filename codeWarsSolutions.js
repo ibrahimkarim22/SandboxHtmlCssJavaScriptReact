@@ -656,3 +656,74 @@
 
 //////////////////////////////////////
 
+//https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/javascript
+
+// function accum(s) {
+//     const arr = s.split('')
+//     const newArray = [];
+    
+//     for (let i = 0; i < arr.length; i++) {
+
+//         newArray.push(arr[i].toUpperCase() + arr[i].toLowerCase().repeat(i));    
+//     }
+//     return newArray.join('-')
+
+// }
+// console.log(accum("ZpglnRxqenU")) 
+//Z-Pp-Ggg-Llll-Nnnnn-Rrrrrr-Xxxxxxx-Qqqqqqqq-Eeeeeeeee-Nnnnnnnnnn-Uuuuuuuuuuu
+
+////////////////////////////////////
+
+//https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/javascript
+
+// function validatePIN (pin) {
+        
+//         return (/^\d{4}$|^\d{6}$/).test(pin);
+    
+// }
+
+// console.log(validatePIN("1234"));
+// console.log(validatePIN("123456"))
+// console.log(validatePIN("12345"));
+// console.log(validatePIN("a234"));
+// console.log(validatePIN("-1.234"))
+
+//////////////////////////////////////////
+
+//https://www.codewars.com/kata/554b4ac871d6813a03000035/javascript
+
+// function highAndlow(numbers) {
+//     const arr = numbers.split(' ').map(Number)
+
+//     let max = Math.max(...arr);
+//     let min = Math.min(...arr);
+
+//     return `${max} ${min}`;
+// }
+
+// console.log(highAndlow("1 2 3 4 5 6 7"))
+
+///////////////////////////////////////////////////
+
+//https://www.codewars.com/kata/5949481f86420f59480000e7/javascript
+
+// function oddOrEven(array) {
+//     if (array.length === 0) {
+//       return 'even';
+//     }
+  
+//   const sum = array.reduce((acc, curr) => acc + curr, 0)
+//    return sum % 2 === 0 ? 'even' : 'odd';
+//   }
+
+// console.log(oddOrEven([]));
+// console.log(oddOrEven([0]));
+// console.log(oddOrEven([1]));
+// console.log(oddOrEven([0, 1, 5]));
+// console.log(oddOrEven([0, 1, 2]));
+
+///////////////////////////////
+//
+
+
+
