@@ -703,7 +703,7 @@
 
 // console.log(highAndlow("1 2 3 4 5 6 7"))
 
-///////////////////////////////////////////////////
+/////////////////////////////////////////////////
 
 //https://www.codewars.com/kata/5949481f86420f59480000e7/javascript
 
@@ -723,7 +723,15 @@
 // console.log(oddOrEven([0, 1, 2]));
 
 ///////////////////////////////
+//https://www.codewars.com/kata/555086d53eac039a2a000083/train/javascript
+
+
+// function lovefunc(flower1, flower2){
+//     return flower1 % 2 !== flower2 % 2
+//     }
+// console.log(lovefunc(1, 4));
+// console.log(lovefunc(2, 2))
+
+///////////////////////////////////////
+
 //
-
-
-
