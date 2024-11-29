@@ -734,4 +734,44 @@
 
 ///////////////////////////////////////
 
+//https://www.codewars.com/kata/55ecd718f46fba02e5000029/train/javascript
+
+// function between(a, b) {
+//     let arr = [];
+//     while (a <= b) {
+//         arr.push(a)
+//         a++
+//     }
+//     return arr
+// }
+
+// console.log(between(1, 4))
+
+
+///////////////////////////////////////////////////////
+
+//https://www.codewars.com/kata/563cf89eb4747c5fb100001b/javascript
+
+// function removeSmallest(numbers) {
+//     const smallest = Math.min(...numbers);
+//     const newArr = [];
+//     let found = false;
+    
+//     if (numbers.length === 0) {
+//         return [];
+//     }
+
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] === smallest && !found) {
+//             found = true;
+//             continue;
+//         }
+//         newArr.push(numbers[i])
+//     }
+//     return newArr;
+// }
+// console.log(removeSmallest([1, 2, 3, 4, 5]))
+
+///////////////////////////////////////////////
+
 //
