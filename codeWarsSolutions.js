@@ -789,4 +789,25 @@
 //   console.log(firstNonConsecutive([1, 2, 4, 5, 6, 7]))
 
 /////////////////////////////
-//
+//https://www.codewars.com/kata/56efc695740d30f963000557/train/javascript
+
+// function alternateCase(string) {
+//     const arr = string.split('')
+//     let result = ''
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === arr[i].toUpperCase()) {
+//             result += arr[i].toLowerCase();
+//         } else if (arr[i] === arr[i].toLowerCase()) {
+//             result += arr[i].toUpperCase();
+//        } else result += arr[i];
+//     }
+//     return result
+// }
+
+// console.log(alternateCase("HELLO WORLD"))
+// console.log(alternateCase('hello world'))
+// console.log(alternateCase('hEllO WoRld'))
+// console.log(alternateCase('1, 2, 3, 4, 5'))
+// console.log( alternateCase('1abc234'));
+
+///////////////////////////////////
