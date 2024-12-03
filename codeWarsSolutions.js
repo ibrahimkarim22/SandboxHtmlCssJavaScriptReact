@@ -811,3 +811,47 @@
 // console.log( alternateCase('1abc234'));
 
 ///////////////////////////////////
+//https://www.codewars.com/kata/5bb904724c47249b10000131/train/javascript
+
+
+// function points(games) {
+//     let score = 0;
+//     for (let i = 0; i < games.length; i++) {
+      
+//       const [x, y] = games[i].split(':').map(Number);
+      
+//       if (x > y) {
+//         score += 3
+//       } else if (x === y) {
+//         score += 1;
+//       }
+      
+//     }
+//     return score;
+//   }
+
+//   console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]))
+
+////////////////////////////////////////
+
+//https://www.codewars.com/kata/5467e4d82edf8bbf40000155/train/javascript
+
+// function descendingOrder(n) {
+    
+//     let digits = n.toString().split('').map(Number);
+
+//     digits.sort((a, b) => b - a);
+
+//     let result = parseInt(digits.join(''), 10);
+
+// return result
+// }
+
+// console.log(descendingOrder(0));
+// console.log(descendingOrder(1));
+// console.log(descendingOrder(111));
+// console.log(descendingOrder(123456789));
+
+////////////////////////////////////////
+
+//
