@@ -854,4 +854,24 @@
 
 ////////////////////////////////////////
 
+//https://www.codewars.com/kata/58f5c63f1e26ecda7e000029/train/javascript
+
+// function wave(str){
+//     const result = [];
+//     const chars = str.split('');
+    
+    
+//     for (let i = 0; i < str.length; i++) {
+//       if (chars[i] !== ' ') {
+//         const newChars = [...chars];
+//         newChars[i] = newChars[i].toUpperCase();
+//         result.push(newChars.join(''))
+//       }
+//     }
+//     return result
+//   }
+
+// console.log(wave('hello'))
+
+//////////////////////////////////
 //
