@@ -550,38 +550,69 @@
 
 //https://leetcode.com/problems/largest-local-values-in-a-matrix/
 
-var largestLocal = function(grid) {
-    const n = grid.length; //get the size of the grid (it's an n x n square, so n is both rows and columns)
-    const result = []; // initialize an empty array to store the resulting matrix.
+// var largestLocal = function(grid) {
+    // const n = grid.length; //get the size of the grid (it's an n x n square, so n is both rows and columns)
+    // const result = []; // initialize an empty array to store the resulting matrix.
 
     //the outer loop iterates over each possile starting row (i) of a 3 x 3 block
     //we stop at n - 2 because we can't start a 3 x 3 block in the last two rows
-    for (let i = 0; i < n - 2; i++) {
-        const row = [];//initialize a new row for the result matrix
+    // for (let i = 0; i < n - 2; i++) {
+        // const row = [];//initialize a new row for the result matrix
 
         //the inner loop iterates over each possilbe starting colum (j) of a 3 x 3 block
         //we stop at n - 2 here as well because we can't start a 3 x 3 block in the last two columns
-        for (let j = 0; j < n - 2; j++) {
+        // for (let j = 0; j < n - 2; j++) {
             let maxVal = -Infinity;//initialize the maximum value for this 3 x 3 block as a very low number
 
             //now, we need to go through each element in the 3 x 3 block that starts at (i, j)
             //this means looping over rows from i to i + 2 and columns from j to j + 2
-            for (let x = i; x < i + 3; x++) {//loop through the 3 rows of the 3 x 3 block
-                for (let y = j; y < j + 3; y++) {//loop through the 3 columns of the 3 x 3 block
+            // for (let x = i; x < i + 3; x++) {//loop through the 3 rows of the 3 x 3 block
+                // for (let y = j; y < j + 3; y++) {//loop through the 3 columns of the 3 x 3 block
                     //upddate maxVal if the current element grid[x][y] is larger than the current maxVal
-                    maxVal = Math.max(maxVal, grid[x][y]);
-                }
-            }
+                    // maxVal = Math.max(maxVal, grid[x][y]);
+            //     }
+            // }
            //after finding the maximum value in this 3x3 block, add it to the current row
-           row.push(maxVal);  // Add maxVal to the row we're building for the result matrix.
-        }
+        //    row.push(maxVal);  // Add maxVal to the row we're building for the result matrix.
+        // }
 
         //after finishing a row of maximum values for 3x3 blocks add this row to the result matrix
-        result.push(row);
-    }
+    //     result.push(row);
+    // }
 
     //after constructing the entire result matrix return it
-    return result;
-};
+//     return result;
+// };
 
-console.log(largestLocal([[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]))
+// console.log(largestLocal([[9,9,8,1],[5,6,2,6],[8,2,6,4],[6,2,2,2]]))
+
+////////////////////////////////////
+
+//https://leetcode.com/problems/valid-parentheses/
+
+// var isValid = function(s) {
+// const stack = [];
+// const map = {
+//     ')' : '(',
+//     '}' : '{',
+//     ']' : '['
+// };
+// for (let char of s) {
+//     if (char === '(' || char === '{' || char === '[') {
+//         stack.push(char);
+//     } else {
+//         if (stack.pop() !== map[char]) {
+//             return false;
+//         }
+//     }
+// }
+// // if the stack is empty all brackets are balanced
+// return stack.length === 0;
+// }
+
+// console.log(isValid("()"))
+// console.log(isValid("()[]{}"))
+// console.log(isValid("(]"))
+// console.log(isValid("([])"))
+////////////////////////////
+//
