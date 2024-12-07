@@ -874,4 +874,20 @@
 // console.log(wave('hello'))
 
 //////////////////////////////////
-//
+//https://www.codewars.com/kata/56747fd5cb988479af000028/train/javascript
+
+// function getMiddle(s) {
+//     const length = s.length;
+
+//     if (length % 2 === 0) {
+//         return s[length / 2 - 1] + s[length / 2];
+//     } else {
+//         return s[Math.floor(length / 2)];
+//     }
+//   }
+
+//   console.log(getMiddle('eva'));
+//   console.log(getMiddle('michelle'));
+
+  /////////////////////////////////
+  //
