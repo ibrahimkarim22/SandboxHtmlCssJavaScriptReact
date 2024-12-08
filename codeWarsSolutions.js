@@ -890,4 +890,27 @@
 //   console.log(getMiddle('michelle'));
 
   /////////////////////////////////
+  //https://www.codewars.com/kata/5208f99aee097e6552000148/train/javascript
+
+  // function solution(string) {
+
+  //   let result = '';
+    
+  //   for (let i = 0; i < string.length; i++) {
+  //     if (string[i] === string[i].toUpperCase() && string[i] !== string[i].toLowerCase()) {
+  //      result += ' ' + string[i];
+  //     } else {
+  //       result += string[i]
+  //     }
+  //   }
+  //   return result;
+  // }
+
+  // console.log(solution('camelCasing')); 
+  // console.log(solution('identifier'));
+  // console.log(solution(''));
+
+  ///////////////////////////
   //
+
+  
