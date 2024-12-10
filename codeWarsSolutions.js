@@ -911,6 +911,38 @@
   // console.log(solution(''));
 
   ///////////////////////////
-  //
+  //https://www.codewars.com/kata/5808dcb8f0ed42ae34000031/train/javascript
 
-  
+  // function switchItUp(number){
+  //   if (number < 0 || number > 9) {
+  //     return `number must be between 0 and 9`
+  //   }
+  //     switch (number) { 
+  //     case 1:
+  //        return "one"
+  //     case 2:
+  //        return "two"
+  //      case 3: 
+  //        return "three"
+  //       case 4:
+  //        return "four"
+  //       case 5:
+  //        return "five"
+  //       case 6: 
+  //        return "six"
+  //        case 7:
+  //        return "seven"
+  //        case 8: 
+  //        return "eight"
+  //        case 9: 
+  //        return "nine"
+  //         case 0:
+  //         return "zero"
+  //    }
+  //   }
+
+  //   console.log(switchItUp(1))
+  //   console.log(switchItUp(2))
+  //   console.log(switchItUp(5))
+  //   console.log(switchItUp(-1))
+  //   console.log(switchItUp(10))
