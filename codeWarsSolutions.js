@@ -946,3 +946,42 @@
   //   console.log(switchItUp(5))
   //   console.log(switchItUp(-1))
   //   console.log(switchItUp(10))
+
+
+  //////////////////////////////////
+
+  //https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c/train/javascript
+
+  // function sortByLength(array) {
+  //   return array.sort((a, b) => a.length - b.length)
+    
+  // }
+
+  // console.log(sortByLength(["Telescopes", "Glasses", "Eyes", "Monocles"]))
+
+
+  /////////////////////////////
+
+  //https://www.codewars.com/kata/5ae62fcf252e66d44d00008e/train/javascript
+
+  // function expressionMatter(a, b, c) {
+  //   let arr = [];
+    
+  //   arr.push(a + b + c);
+  //   arr.push(a * b * c);
+  //   arr.push(a * (b + c));
+  //   arr.push((a + b) * c);
+  //   arr.push(a + b * c)
+    
+  //   return Math.max(...arr);
+  // }
+
+  // console.log(expressionMatter(2, 1, 2));
+  // console.log(expressionMatter(2, 1, 1));
+  // console.log(expressionMatter(1, 1, 1));
+
+  /////////////////////////////
+
+  //
+
+  
