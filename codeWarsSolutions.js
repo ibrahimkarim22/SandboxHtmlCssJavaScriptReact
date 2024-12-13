@@ -982,6 +982,32 @@
 
   /////////////////////////////
 
-  //
+  //https://www.codewars.com/kata/55a2d7ebe362935a210000b2/train/javascript
 
+  // function findSmallestInt(arr) {
+  //   return Math.min(...arr);
+  // }
+
+  // console.log(findSmallestInt([78, 56, 232, 12, 8]))
+
+  /////////////////////////////////////////////
+
+  //https://www.codewars.com/kata/56cd44e1aa4ac7879200010b/train/javascript
+
+  // function isUpperCase(str) {
+  //   return str.toString() === str.toUpperCase();
+  // }
+
+  // console.log(isUpperCase('c'));
+  // console.log(isUpperCase('C'))
+  // console.log(isUpperCase('hello I AM IBRAHIM'))
+  // console.log(isUpperCase('HELLO I AM IBRAHIM'))
+  // console.log(isUpperCase('AKLJLNSDFLGINd'))
+  // console.log(isUpperCase('AJBNKJFGAUHBNASD'))
+
+
+
+  ////////////////////////////////////
+
+  
   
