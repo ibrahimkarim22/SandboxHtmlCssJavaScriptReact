@@ -1044,6 +1044,15 @@
 
 
   ////////////////////////////////////
-  //
+  //https://www.codewars.com/kata/5a2be17aee1aaefe2a000151/train/javascript
 
-  
+//   function arrayPlusArray(arr1, arr2) {
+//     const result1 = arr1.reduce((acc, curr) => acc + curr, 0);
+//     const result2 = arr2.reduce((acc, curr) => acc + curr, 0);
+//     return `${result1} + ${result2}`
+//   }
+// console.log([1, 2, 3], [4, 5, 6])
+
+////////////////////////////////////////////
+//
+
