@@ -1054,5 +1054,21 @@
 // console.log([1, 2, 3], [4, 5, 6])
 
 ////////////////////////////////////////////
-//
+//https://www.codewars.com/kata/57cc975ed542d3148f00015b/train/javascript
+
+
+// function check(a, x) {
+//   for (let i = 0; i < a.length; i++) {
+//     if (a[i] === x) {
+//       return true;
+//     } 
+//   }
+//   return false
+// }
+
+// console.log(check([77, 101], 77))
+
+//////////////////////////////
+
+
 
