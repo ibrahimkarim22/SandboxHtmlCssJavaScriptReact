@@ -1070,5 +1070,26 @@
 
 //////////////////////////////
 
+//https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript
 
 
+// function squareDigits(num) {
+
+//   let arr = num.toString().split('').map(Number);
+
+//   let newArr = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     newArr.push(arr[i]**2);
+//   }
+//   return parseInt(newArr.join(''));
+// }
+
+// console.log(squareDigits(3212));
+// console.log(squareDigits(2112));
+// console.log(squareDigits(0));
+
+
+///////////////////////////////
+
+//
