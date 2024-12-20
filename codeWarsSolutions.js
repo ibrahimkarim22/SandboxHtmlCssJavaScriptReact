@@ -1092,4 +1092,32 @@
 
 ///////////////////////////////
 
+//https://www.codewars.com/kata/55cb632c1a5d7b3ad0000145/train/javascript
+
+// function hoopCount (n) {
+//   return n >= 10 ? 'Great, now move on to tricks' : 'Keep at it until you get it';
+// }
+
+// console.log(hoopCount(3));
+// console.log(hoopCount(10));
+
+/////////////////////////////////////////////
+
+//https://www.codewars.com/kata/56f69d9f9400f508fb000ba7/train/javascript
+
+// function monkeyCount(n) {
+//   let arr = [];
+//   for (let i = 1; i <= n; i++) {
+//     arr.push(i)
+//   }
+//   return arr;
+// }
+// console.log(monkeyCount(5));
+// console.log(monkeyCount(3));
+// console.log(monkeyCount(9));
+// console.log(monkeyCount(10));
+// console.log(monkeyCount(20));
+
+///////////////////////////////////////////////
+
 //
