@@ -1120,4 +1120,17 @@
 
 ///////////////////////////////////////////////
 
+//https://www.codewars.com/kata/5601409514fc93442500010b/train/javascript
+
+
+// function betterThanAverage(classPoints, yourPoints) {
+//   const total = classPoints.reduce((acc, curr) => acc + curr, 0);
+//   const average = total / classPoints.length;
+//   return yourPoints > average;
+// }
+
+// console.log(betterThanAverage([22, 55, 39, 58, 122], 70))
+
+
+////////////////////////////////
 //
