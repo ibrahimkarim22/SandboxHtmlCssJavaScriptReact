@@ -1133,4 +1133,20 @@
 
 
 ////////////////////////////////
+//https://www.codewars.com/kata/5a00e05cc374cb34d100000d/train/javascript
+
+// const reverseSeqq = n => {
+//   let arr = [];
+//   let x = 1;
+//   while (x <= n) {
+//     arr.push(x)
+//     x++;
+//   }
+//   return arr.reverse()
+// }
+// console.log(reverseSeqq(5))
+
+//////////////////////////////////////
+
 //
+
