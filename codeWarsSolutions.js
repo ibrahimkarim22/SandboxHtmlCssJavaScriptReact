@@ -1175,4 +1175,24 @@
 
 
 ////////////////////////////
+//https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript
+
+// function disemvowel(str) {
+//   const vowels = ['a', 'e', 'i', 'o', 'u'];
+//   let newString = [];
+  
+//   for (let i = 0; i < str.length; i++) {
+//     if (!vowels.includes(str[i].toLowerCase())) {
+//       newString.push(str[i])
+//     }
+
+//   }
+//   return newString.join('')
+
+// }
+
+// console.log(disemvowel('Now is the winter of our discontent made glorious summer by this son of york'))
+
+/////////////////////////////
+
 //
