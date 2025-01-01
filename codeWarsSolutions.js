@@ -1258,3 +1258,22 @@
 //
 
 ////////////////////////////
+//https://www.codewars.com/kata/5865918c6b569962950002a1/train/javascript
+
+// function strCount(str, letter) {
+//   let repetition = 0;
+//   const string = str.split('');
+//   for (let i = 0; i < string.length; i++) {
+//     if (string[i] === letter) {
+//       repetition++;
+//     }
+//   }
+//   return repetition
+// }
+// console.log(strCount('Hello', 'o'));
+// console.log(strCount('Hello', 'l'));
+// console.log(strCount(''), 'z');
+
+////////////////////////////
+
+//
