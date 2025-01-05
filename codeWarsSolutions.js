@@ -1317,4 +1317,23 @@
 // console.log(summation(8));
 
 //////////////////////////////
+//https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/javascript
+
+
+// function high(x){
+//   const words = x.split(' ');
+   
+//    const scores = words.map(word => {
+//      return [...word].reduce((acc, char) => acc + (char.charCodeAt(0) - 96), 0);
+     
+//    });
+   
+//    const maxIndex = scores.indexOf(Math.max(...scores));
+   
+//    return words[maxIndex];
+//  }
+
+//  console.log(high('man i need a taxi up to new york'))
+
+////////////////////////
 //
