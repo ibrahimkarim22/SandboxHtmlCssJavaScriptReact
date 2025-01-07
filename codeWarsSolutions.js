@@ -1348,5 +1348,13 @@
 // console.log(findMultiples(5, 25));
 
 ///////////
-//
+//https://www.codewars.com/kata/53da6d8d112bd1a0dc00008b/train/javascript
 
+
+// function reverseList(list) {
+//   return list.reverse();
+// }
+
+// console.log(reverseList([5, 4, 3, 2, 1]))
+///////////////////
+//
