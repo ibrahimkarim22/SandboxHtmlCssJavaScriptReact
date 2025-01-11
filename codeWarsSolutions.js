@@ -1397,4 +1397,24 @@
 
 ///////////////////////////
 
+//https://www.codewars.com/kata/55908aad6620c066bc00002a/train/javascript
+
+// function XO(str) {
+//   str = str.toLowerCase();
+
+//   let countX = (str.match(/x/g) || []).length;
+//   let countO = (str.match(/o/g) || []).length;
+
+//   return countX === countO;
+// }
+
+// console.log(XO('xo'));
+// console.log(XO('xxOo'));
+// console.log(XO('xxxm'));
+// console.log(XO('Oo'));
+// console.log(XO('ooom'));
+
+
+///////////////////////////
+
 //
