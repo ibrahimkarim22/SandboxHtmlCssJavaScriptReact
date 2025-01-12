@@ -1417,4 +1417,29 @@
 
 ///////////////////////////
 
+//https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/javascript
+
+// function incrementString(strng) {
+//   const match = strng.match(/(\d*)$/);
+
+//   const number = match[0];
+//   const textPart = strng.slice(0, -number.length);
+
+//   if (number === "") {
+//     return strng + "1";
+
+//   } else {
+//     const incremented = String(Number(number) + 1).padStart(number.length, "0");
+//     return textPart + incremented;
+//   }
+// }
+
+// console.log(incrementString("foobar000"));
+// console.log(incrementString("foobar999"));
+
+/////////////
 //
+
+
+
+
