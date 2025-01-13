@@ -1438,8 +1438,39 @@
 // console.log(incrementString("foobar999"));
 
 /////////////
-//
+//https://www.codewars.com/kata/5503013e34137eeeaa001648/train/javascript
 
+
+// function diamond(n){
+//   if (n <= 0 || n % 2 === 0) return null;
+  
+//   let diamondString = "";
+  
+//   for (let i = 1; i <= n; i += 2) {
+//     const spaces = " ".repeat((n - i) / 2);
+//     const stars = "*".repeat(i);
+//     diamondString += spaces + stars + "\n";
+//   }
+  
+//   for (let i = n - 2; i >= 1; i -= 2) {
+//     const spaces = " ".repeat((n - i) / 2);
+//     const stars = "*".repeat(i);
+//     diamondString += spaces + stars + "\n";
+//   }
+  
+//   return diamondString.trimEnd() + "\n";
+// }
+
+// console.log(diamond(1));
+// console.log(diamond(3));
+// console.log(diamond(5));
+// console.log(diamond(2));
+// console.log(diamond(-3));
+// console.log(diamond(0));
+
+//////////////////////
+
+//
 
 
 
