@@ -1487,4 +1487,19 @@
 
 ////////////////////////////////////
 
+//https://www.codewars.com/kata/55d1d6d5955ec6365400006d/train/javascript
+
+// function roundToNext(n) {
+//   return Math.ceil(n / 5) * 5;
+// }
+
+// console.log(roundToNext(0));
+// console.log(roundToNext(2));
+// console.log(roundToNext(12));
+// console.log(roundToNext(21));
+// console.log(roundToNext(-2));
+// console.log(roundToNext(-5));
+
+////////////////////////////////////////////
 //
+
