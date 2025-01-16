@@ -1501,5 +1501,30 @@
 // console.log(roundToNext(-5));
 
 ////////////////////////////////////////////
+//https://www.codewars.com/kata/5262119038c0985a5b00029f/train/javascript
+
+// function isPrime(num) {
+//   if (num <= 1) return false;
+//   if (num === 2) return true;
+//   if (num % 2 === 0) return false;
+  
+//   const sqrt = Math.sqrt(num);
+//   for (let i = 3; i <= sqrt; i += 2) {
+//     if (num % i === 0) return false;
+//   }
+//   return true
+// }
+
+// console.log(isPrime(0));
+// console.log(isPrime(1));
+// console.log(isPrime(2));
+// console.log(isPrime(73));
+// console.log(isPrime(75));
+// console.log(isPrime(-1));
+
+
+/////////////////////////////
+
 //
+
 
