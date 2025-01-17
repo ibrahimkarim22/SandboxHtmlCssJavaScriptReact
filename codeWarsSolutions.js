@@ -1525,6 +1525,34 @@
 
 /////////////////////////////
 
-//
+//https://www.codewars.com/kata/52685f7382004e774f0001f7/train/javascript
 
 
+// function humanReadable (seconds) {
+//   const hours = Math.floor(seconds / 3600);
+//   const minutes = Math.floor((seconds % 3600) / 60);
+//   const secs = seconds % 60;
+  
+//   const formattedHours =  String(hours).padStart(2, '0');
+//   const formattedMinutes = String(minutes).padStart(2, '0');
+//   const formattedSeconds = String(secs).padStart(2, '0');
+  
+//   return `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+//   }
+
+//   console.log(seconds(0));
+//   console.log(seconds(59));
+//   console.log(seconds(60));
+//   console.log(seconds(90));
+//   console.log(seconds(3599));
+//   console.log(seconds(3600));
+//   console.log(seconds(45396));
+//   console.log(seconds(86399));
+//   console.log(seconds(86400));
+//   console.log(seconds(359999));
+
+  ///////////////////////////////////////
+  //
+
+
+  
