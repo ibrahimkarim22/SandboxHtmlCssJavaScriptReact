@@ -1552,7 +1552,23 @@
 //   console.log(seconds(359999));
 
   ///////////////////////////////////////
-  //
+  //https://www.codewars.com/kata/5552101f47fc5178b1000050/train/javascript
 
+
+//   function digPow(n, p) {
+//     const digits = String(n).split('');
+//     const sum = digits.reduce((total, digit, index) => {
+
+//       return total + Math.pow(Number(digit), p + index);
+
+//     }, 0)
+//     return sum % n === 0 ? sum / n : -1;
+//   }
+// console.log(digPow(89, 1));
+// console.log(digPow(92, 1));
+// console.log(digPow(46288, 3));
+
+/////////////////////////////////////
+//
 
   
