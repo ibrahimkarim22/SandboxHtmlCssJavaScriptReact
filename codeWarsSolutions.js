@@ -1569,6 +1569,24 @@
 // console.log(digPow(46288, 3));
 
 /////////////////////////////////////
-//
+//https://www.codewars.com/kata/513e08acc600c94f01000001/train/javascript
 
+
+// function rgb(r, g, b) {
+//   function toHex(value) {
+//     value = Math.max(0, Math.min(255, value));
+    
+//     return value.toString(16).toUpperCase().padStart(2, '0');
+//   }
+// return toHex(r) + toHex(g) + toHex(b);
+// }
+
+// console.log(rgb(0, 0, 0))
+// console.log(rgb(0, 0, -20))
+// console.log(rgb(300, 255, 255))
+// console.log(rgb(173, 255, 47))
   
+///////////////////////////////////
+
+
+//
