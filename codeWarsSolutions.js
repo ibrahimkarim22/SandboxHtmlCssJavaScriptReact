@@ -1610,4 +1610,29 @@
 // console.log(persistence(999))
 
 /////////////////////////////
+//https://www.codewars.com/kata/55e1990978c60e5052000011/train/javascript
+
+// function merge(line) {
+//   let nonZeroTiles = line.filter(num => num !== 0);
+  
+//   for (let i = 0; i < nonZeroTiles.length - 1; i++) {
+//     if (nonZeroTiles[i] === nonZeroTiles[i + 1]) {
+//       nonZeroTiles[i] *= 2;
+//       nonZeroTiles[i + 1] = 0;
+//     }
+//   }
+  
+//   let mergedTiles = nonZeroTiles.filter(num => num !== 0);
+  
+//   while (mergedTiles.length < line.length) {
+//     mergedTiles.push(0);
+//   }
+  
+//   return mergedTiles;
+// };
+
+// console.log(merge[2, 0, 2, 2], [4, 2, 0, 0]);
+// console.log(merge([2, 0, 2, 4], [4, 4, 0, 0]));
+
+////////////////////////////////////////
 //
