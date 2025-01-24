@@ -1635,4 +1635,33 @@
 // console.log(merge([2, 0, 2, 4], [4, 4, 0, 0]));
 
 ////////////////////////////////////////
+//https://www.codewars.com/kata/554f76dca89983cc400000bb/train/javascript
+
+
+// function solequa(n) {
+//   let results = [];
+  
+//   for (let a = 1; a * a <=n; a++) {
+//     if (n % a === 0) {
+//       let b = n / a;
+      
+//       let x = (a + b) / 2;
+//       let y = (b - a) / 4;
+      
+//       if (Number.isInteger(x) && Number.isInteger(y)) {
+//          results.push([x, y]);
+//       }
+//     }
+//   }
+//   return results
+// }
+
+
+// console.log(solequa(5), [[3, 1]]);
+// console.log(solequa(12), [[4, 1]]);
+// console.log(solequa(13), [[7, 3]]);
+// console.log(solequa(16), [[4, 0]]);
+
+
+///////////////////////////////////
 //
