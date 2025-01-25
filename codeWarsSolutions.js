@@ -1664,4 +1664,23 @@
 
 
 ///////////////////////////////////
+//https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript
+
+// function solution(str){
+//   if (str.length % 2 !== 0) {
+//     str += '_';
+//   }
+ 
+//  let result = [];
+//  for (let i = 0; i < str.length; i += 2) {
+//    result.push(str.slice(i, i + 2));
+
+//  }
+//  return result;
+// }
+// console.log(solution("abcdef"));
+// console.log(solution("abcdefg"));
+
+
+/////////////////////////////////////
 //
