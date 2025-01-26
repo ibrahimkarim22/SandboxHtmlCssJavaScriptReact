@@ -1683,4 +1683,20 @@
 
 
 /////////////////////////////////////
+//https://chatgpt.com/c/678f0fe6-965c-8012-be9c-6ec485ba664a
+
+// function alphabetPosition(text) {
+//   return text
+//       .toLowerCase() 
+//       .split('')
+//       .filter(char => char >= 'a' && char <= 'z')
+//       .map(char => char.charCodeAt(0) - 96) 
+//       .join(' '); 
+// }
+
+
+// console.log(alphabetPosition("The sunset sets at twelve o' clock."))
+// console.log(alphabetPosition("The narwhal bacons at midnight."))
+
+/////////////////////////
 //
