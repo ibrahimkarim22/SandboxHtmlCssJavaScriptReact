@@ -1699,4 +1699,25 @@
 // console.log(alphabetPosition("The narwhal bacons at midnight."))
 
 /////////////////////////
+//https://www.codewars.com/kata/56a5d994ac971f1ac500003e/train/javascript
+
+// function longestConsec(strarr, k) {
+//   if (k <= 0 || k > strarr.length || strarr.length === 0) return "";
+
+//   let longest = "";
+
+//   for (let i = 0; i <= strarr.length - k; i++) {
+//     const combined = strarr.slice(i, i + k).join("");
+    
+//     if (combined.length > longest.length) {
+//       longest = combined;
+//     }
+//   }
+// return longest;
+// }
+
+// console.log(longestConsec(["zone", "abigail", "theta", "form", "libe", "zas"], 2))
+// console.log(longestConsec(["ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"], 1))
+
+//////////////////////
 //
