@@ -1720,4 +1720,29 @@
 // console.log(longestConsec(["ejjjjmmtthh", "zxxuueeg", "aanlljrrrxx", "dqqqaaabbb", "oocccffuucccjjjkkkjyyyeehh"], 1))
 
 //////////////////////
+//https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript
+
+
+// function isValidWalk(walk) {
+//   if (walk.length !== 10) return false;
+  
+//   let northSouth = 0;
+//   let eastWest = 0;
+  
+//   for (let dir of walk) {
+//     if (dir === 'n') northSouth++;
+//     if (dir === 's') northSouth--;
+//     if (dir === 'e') eastWest++;
+//     if (dir === 'w') eastWest--;
+//   }
+  
+//   return northSouth === 0 && eastWest === 0;
+// }
+
+// console.log(isValidWalk(['n','s','n','s','n','s','n','s','n','s']));
+// console.log(isValidWalk(['w','e','w','e','w','e','w','e','w','e','w','e']));
+
+
+//////////////////////////
+
 //
