@@ -1745,4 +1745,26 @@
 
 //////////////////////////
 
+//https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript
+
+// function findOutlier(integers){
+//   let firstThree = integers.slice(0, 3);
+  
+//   let evens = firstThree.filter(num => num % 2 === 0);
+//   let odds =firstThree.filter(num => num % 2 !== 0);
+  
+  
+//   let majorityEven = evens.length > odds.length;
+  
+//   return integers.find(num => (majorityEven ? num % 2 !== 0 : num % 2 === 0));
+// }
+
+// console.log(findOutlier([0, 1, 2]))
+// console.log(findOutlier([1, 2, 3]))
+// console.log(findOutlier([2, 6, 8, 10, 3]))
+// console.log(findOutlier([0, 0, 3, 0 ,0]))
+// console.log(findOutlier([1, 1, 0, 1, 1]))
+
+///////////////////////
+
 //
