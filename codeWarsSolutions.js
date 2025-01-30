@@ -1767,4 +1767,17 @@
 
 ///////////////////////
 
+//https://www.codewars.com/kata/520b9d2ad5c005041100000f/train/javascript
+
+// function pigIt(str){
+//   return str.split(" ").map(word => {
+//     return /^[a-zA-Z]+$/.test(word) ? word.slice(1) + word[0] + "ay" : word;
+//   }).join(" ")
+// }
+
+// console.log(pigIt('Pig latin is cool'))
+// console.log(pigIt('This is my string'))
+
+//////////////////////////////////
+
 //
