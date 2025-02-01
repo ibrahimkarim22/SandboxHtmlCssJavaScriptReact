@@ -1793,4 +1793,21 @@
 
 /////////////////////////////////
 
+//https://www.codewars.com/kata/530e15517bc88ac656000716/train/javascript
+
+// function rot13(message){
+//   return message.replace(/[a-zA-Z]/g, (char) => {
+//     const base = char >= 'a' ? 97 : 65;
+//     return String.fromCharCode(((char.charCodeAt(0) - base + 13) % 26) + base);
+//   });
+// }
+
+// console.log(rot13("test"));
+// console.log(rot13("Test"));
+// console.log(rot13("Hello!"));
+// console.log(rot13("ROT13"));
+// console.log(rot13("123!"));
+
+/////////////////////////////////////
+
 //
