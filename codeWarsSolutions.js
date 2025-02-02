@@ -1810,4 +1810,16 @@
 
 /////////////////////////////////////
 
+//https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript
+
+// function inArray(array1,array2){
+//   return array1.filter(sub => array2.some(str => str.includes(sub))).sort();
+// }
+
+// let a1 = ["arp", "live", "strong"];
+// let a2 = ["lively", "alive", "harp", "sharp", "armstrong"];
+
+// console.log(inArray(a1, a2)); 
+///////////////////////////////
+
 //
