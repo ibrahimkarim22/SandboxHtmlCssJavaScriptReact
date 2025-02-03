@@ -1822,4 +1822,22 @@
 // console.log(inArray(a1, a2)); 
 ///////////////////////////////
 
+//https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript
+
+// function count(string) {
+//   let charCount = {};
+  
+//   for (let char of string) {
+//     charCount[char] = (charCount[char] || 0) + 1;
+//   }
+
+// return charCount;
+// }
+
+// console.log(count("aba"));  
+// console.log(count("hello")); 
+// console.log(count(""));
+
+//////////////////////////////////
+
 //
