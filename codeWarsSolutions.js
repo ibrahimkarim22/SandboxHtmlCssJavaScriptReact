@@ -1840,4 +1840,28 @@
 
 //////////////////////////////////
 
+//https://www.codewars.com/kata/5541f58a944b85ce6d00006a/train/javascript
+
+// function productFib(prod){
+//   let a = 0, b = 1;
+  
+//   while (a * b < prod) {
+//     let temp = a + b;
+//     a = b; 
+//     b = temp;
+//   }
+//   return [a, b, a * b === prod];
+// }
+
+// console.log(productFib(4895));
+// console.log(productFib(5895));
+// console.log(productFib(74043690));
+// console.log(productFib(84049690));
+// console.log(productFib(193864606));
+// console.log(productFib(447577));
+// console.log(productFib(602070));
+
+
+///////////////////////////////////////////////////////////
+
 //
