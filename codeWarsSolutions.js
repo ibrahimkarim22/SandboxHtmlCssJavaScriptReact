@@ -1864,4 +1864,23 @@
 
 ///////////////////////////////////////////////////////////
 
+//https://www.codewars.com/kata/5592e3bd57b64d00f3000047/train/javascript
+
+// function findNb(m) {
+//   let n = 0;
+//   let sum = 0;
+
+//   while (sum < m) {
+//     n++;
+//     sum += Math.pow(n, 3);
+//   }
+// return sum === m ? n : -1
+// }
+// console.log(findNb(4183059834009));
+// console.log(findNb(24723578342962));
+// console.log(findNb(135440716410000));
+// console.log(findNb(40539911473216));
+
+/////////////////////////////////////
+
 //
