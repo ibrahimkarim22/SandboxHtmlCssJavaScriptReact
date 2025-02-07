@@ -1883,4 +1883,15 @@
 
 /////////////////////////////////////
 
+//https://www.codewars.com/kata/5899e054aa1498da6b0000cc/train/javascript
+
+// function reverseInvert(array) {
+//   return array.filter(num => Number.isInteger(num)).map(num => -num).reverse();
+// }
+
+// console.log(reverseInvert([1, 12, 'a', 3, 4, 87, 99.9, -42, 50, 5.6]));
+// console.log(reverseInvert([1, 2, 3, 4, 5]));
+
+/////////////////////////////////////////
+
 //
